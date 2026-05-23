@@ -13,7 +13,16 @@ try {
   console.log("No failed migration to resolve (continuing).");
 }
 
-// Now apply all pending migrations
+// Apply all pending migrations
 console.log("Running prisma migrate deploy...");
 execSync("npx prisma migrate deploy", { stdio: "inherit" });
 console.log("Migrations applied successfully.");
+
+// Seed the database (idempotent — safe to run on every deploy)
+console.log("Running database seed...");
+try {
+  execSync("npx tsx prisma/seed.ts", { stdio: "inherit" });
+  console.log("Seed complete.");
+} catch (e) {
+  console.error("Seed failed (non-fatal):", e.message);
+}

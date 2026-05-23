@@ -254,17 +254,9 @@ const blogPosts = [
 
 <p>I negotiate hard on behalf of sellers. When an inspector finds issues, I know the difference between what actually needs to be fixed and what's a buyer trying to get money back. When an appraisal comes in low, I know how to challenge it and when to negotiate from it. This is where experience matters most.</p>
 
-<h2>Timing the Market</h2>
-
-<p>Spring remains the strongest season for Harrison Ohio home sales — typically March through June brings the most active buyers. But I've successfully sold homes in every month of the year. The right price and the right marketing will find buyers in January as well as May.</p>
-
-<p>Waiting for "spring" when your home is ready to sell in October costs you time and carrying costs. The best time to sell is when you're ready to sell and your home is prepared to compete.</p>
-
 <h2>The First Step</h2>
 
-<p>Call me or fill out the form on this site to request a free home valuation. I'll give you an honest number — not one designed to win your listing, one designed to get you the best outcome. We'll talk through what your home needs before going to market and put together a plan that makes sense for your situation.</p>
-
-<p>This community gave me a career. Getting people the right result when they sell their homes here is how I give something back.</p>
+<p>Call me or fill out the form on this site to request a free home valuation. I'll give you an honest number — not one designed to win your listing, one designed to get you the best outcome.</p>
 
 <p><strong>Scott Windsor | 513-307-6449 | windsorinfinity@gmail.com</strong></p>`,
   },
@@ -273,17 +265,28 @@ const blogPosts = [
 async function main() {
   console.log("Seeding database...");
 
-  // Seed blog posts
+  // ── Admin user ──────────────────────────────────────────────────────────────
+  const adminEmail = process.env.ADMIN_EMAIL || "windsorinfinity@gmail.com";
+  const adminPassword = process.env.ADMIN_PASSWORD || "admin123";
+  const hashedPassword = await bcrypt.hash(adminPassword, 12);
+  await prisma.user.upsert({
+    where: { email: adminEmail },
+    update: { password: hashedPassword, name: "Scott Windsor" },
+    create: { email: adminEmail, password: hashedPassword, name: "Scott Windsor" },
+  });
+  console.log(`✓ Admin user: ${adminEmail}`);
+
+  // ── Blog posts ──────────────────────────────────────────────────────────────
   for (const post of blogPosts) {
     await prisma.blogPost.upsert({
       where: { slug: post.slug },
       update: post,
       create: post,
     });
-    console.log(`✓ Blog post: ${post.title}`);
+    console.log(`✓ Blog post: ${post.title.slice(0, 50)}`);
   }
 
-  // Seed testimonials
+  // ── Testimonials ────────────────────────────────────────────────────────────
   const testimonials = [
     { clientName: "Mike & Jenny Schroeder", city: "Harrison, OH", quote: "Scott sold our home in 11 days — $7,000 over asking. He knows this market better than anyone. We tried another agent first who gave us bad advice. Scott fixed everything and got results.", starRating: 5, listingAddress: "Parks of Whitewater", visible: true, order: 0 },
     { clientName: "Tyler & Amanda Reeves", city: "Cleves, OH", quote: "As first-time buyers, we had no idea what we were doing. Scott was patient, honest, and never pushed us toward something we couldn't afford. We love our house.", starRating: 5, visible: true, order: 1 },
@@ -293,83 +296,118 @@ async function main() {
     { clientName: "Beth & Dave Collinsworth", city: "Whitewater Township", quote: "Scott got us $22,000 more than we expected on the sale of our house. His pricing strategy was exactly right. We were skeptical at first but he knew what he was doing.", starRating: 5, visible: true, order: 5 },
   ];
 
-  for (const t of testimonials) {
-    await prisma.testimonial.create({ data: t });
-    console.log(`✓ Testimonial: ${t.clientName}`);
+  // Delete and re-create testimonials (simpler than upsert without unique key)
+  const existingCount = await prisma.testimonial.count();
+  if (existingCount === 0) {
+    for (const t of testimonials) {
+      await prisma.testimonial.create({ data: t });
+      console.log(`✓ Testimonial: ${t.clientName}`);
+    }
+  } else {
+    console.log(`✓ Testimonials already seeded (${existingCount} records)`);
   }
 
-  // Seed sample listings
-  const listings = [
+  // ── Sold listings (real data from Scott's closed transactions) ──────────────
+  const soldListings = [
     {
-      slug: "2847-whitewater-crossing-drive-harrison-oh",
-      address: "2847 Whitewater Crossing Drive",
+      slug: "11440-gideon-ln-cincinnati",
+      address: "11440 Gideon Ln",
+      city: "Cincinnati", state: "OH", zip: "45249",
+      price: 650000, bedrooms: 4, bathrooms: 2.5, sqft: 2845,
+      propertyType: "Single Family", status: "Sold",
+      photos: JSON.stringify(["https://images.homes.com/listings/102/4704771854-350162802/11440-gideon-ln-cincinnati-oh-primaryphoto.jpg"]),
+      featured: false, soldDate: new Date("2026-06-04"), soldPrice: 650000, featuredOrder: 99,
+    },
+    {
+      slug: "623-deerfield-dr-harrison",
+      address: "623 Deerfield Dr",
       city: "Harrison", state: "OH", zip: "45030",
-      price: 374900, bedrooms: 4, bathrooms: 2.5, sqft: 2450,
-      yearBuilt: 2023, propertyType: "Single Family", status: "Active",
-      description: "Stunning Ryan Homes construction in Parks of Whitewater community. This 4-bedroom, 2.5-bath home features an open-concept main floor, gourmet kitchen with quartz countertops, large owner's suite with walk-in closet, and a 2-car garage. Backs to open green space with trail access to Miami Whitewater Forest. Southwest Local School District.",
-      photos: JSON.stringify(["https://images.unsplash.com/photo-1568605114967-8130f3a36994?w=1200&q=80"]),
-      featured: true, featuredOrder: 0,
+      price: 315000, bedrooms: 4, bathrooms: 2, sqft: 1500,
+      propertyType: "Single Family", status: "Sold",
+      photos: JSON.stringify(["https://images.homes.com/listings/102/3543282254-656462502/623-deerfield-dr-harrison-oh-primaryphoto.jpg"]),
+      featured: false, soldDate: new Date("2026-05-04"), soldPrice: 315000, featuredOrder: 99,
     },
     {
-      slug: "1204-trailhead-boulevard-harrison-oh",
-      address: "1204 Trailhead Boulevard",
+      slug: "202-elbern-ave-harrison",
+      address: "202 Elbern Ave",
       city: "Harrison", state: "OH", zip: "45030",
-      price: 419500, bedrooms: 4, bathrooms: 3, sqft: 2780,
-      yearBuilt: 2022, propertyType: "Single Family", status: "Active",
-      description: "Exceptional Drees Homes Denali floor plan in Trailhead community. Main-floor owner's suite, open great room with fireplace, chef's kitchen with large island. Full basement. Three-car garage. Trail access directly from the community. 30 minutes to Cincinnati via I-74.",
-      photos: JSON.stringify(["https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=1200&q=80"]),
-      featured: true, featuredOrder: 1,
+      price: 248000, bedrooms: 4, bathrooms: 1.5, sqft: 1440,
+      propertyType: "Single Family", status: "Sold",
+      photos: JSON.stringify(["https://images.homes.com/listings/102/6521006724-649921691/202-elbern-ave-harrison-oh-primaryphoto.jpg"]),
+      featured: false, soldDate: new Date("2025-05-15"), soldPrice: 248000, featuredOrder: 99,
     },
     {
-      slug: "418-miami-avenue-cleves-oh",
-      address: "418 Miami Avenue",
-      city: "Cleves", state: "OH", zip: "45002",
-      price: 229900, bedrooms: 3, bathrooms: 2, sqft: 1640,
-      yearBuilt: 1985, propertyType: "Single Family", status: "Active",
-      description: "Charming 3-bedroom ranch in the heart of Cleves. Updated kitchen with new appliances, hardwood floors throughout, large fenced backyard, attached 2-car garage. Southwest Local Schools. 20 minutes to Cincinnati. Move-in ready.",
-      photos: JSON.stringify(["https://images.unsplash.com/photo-1570129477492-45c003edd2be?w=1200&q=80"]),
-      featured: true, featuredOrder: 2,
+      slug: "7887-hamilton-scipio-rd-okeana",
+      address: "7887 Hamilton Scipio Rd",
+      city: "Okeana", state: "OH", zip: "45053",
+      price: 670000, bedrooms: 3, bathrooms: 3, sqft: 2166,
+      propertyType: "Single Family", status: "Sold",
+      photos: JSON.stringify(["https://images.homes.com/listings/102/0363132073-029275171/7887-hamilton-scipio-rd-okeana-oh-primaryphoto.jpg"]),
+      featured: false, soldDate: new Date("2024-05-16"), soldPrice: 670000, featuredOrder: 99,
     },
     {
-      slug: "7712-river-bluff-road-north-bend-oh",
-      address: "7712 River Bluff Road",
-      city: "North Bend", state: "OH", zip: "45052",
-      price: 285000, bedrooms: 4, bathrooms: 2, sqft: 2100,
-      yearBuilt: 1978, propertyType: "Single Family", status: "Pending",
-      description: "Classic 4-bedroom colonial on a quiet street in historic North Bend. Beautiful original hardwood floors, updated bathrooms, large deck overlooking mature trees. 0.4-acre lot. Just 25 minutes from Cincinnati.",
-      photos: JSON.stringify(["https://images.unsplash.com/photo-1564013799919-ab600027ffc6?w=1200&q=80"]),
-      featured: false, featuredOrder: 3,
-    },
-    {
-      slug: "512-pioneer-trail-harrison-oh-sold",
-      address: "512 Pioneer Trail Drive",
+      slug: "1516-fairchild-dr-harrison",
+      address: "1516 Fairchild Dr",
       city: "Harrison", state: "OH", zip: "45030",
-      price: 312000, bedrooms: 3, bathrooms: 2.5, sqft: 1990,
-      yearBuilt: 2019, propertyType: "Single Family", status: "Sold",
-      description: "Sold! Beautiful newer construction home in Harrison. Listed and sold in 9 days.",
-      photos: JSON.stringify(["https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=1200&q=80"]),
-      featured: false, soldDate: new Date("2024-12-15"), soldPrice: 318500, featuredOrder: 4,
+      price: 525000, bedrooms: 4, bathrooms: 3.5, sqft: 3240,
+      propertyType: "Single Family", status: "Sold",
+      photos: JSON.stringify(["https://images.homes.com/listings/102/6866859923-594032751/1516-fairchild-dr-harrison-oh-primaryphoto.jpg"]),
+      featured: false, soldDate: new Date("2023-09-05"), soldPrice: 525000, featuredOrder: 99,
     },
     {
-      slug: "2211-sycamore-lane-harrison-oh-sold",
-      address: "2211 Sycamore Lane",
+      slug: "106-westfield-dr-harrison",
+      address: "106 Westfield Dr",
       city: "Harrison", state: "OH", zip: "45030",
-      price: 249000, bedrooms: 4, bathrooms: 2, sqft: 1850,
-      yearBuilt: 2005, propertyType: "Single Family", status: "Sold",
-      description: "Sold! Well-maintained 4-bedroom home in established Harrison neighborhood.",
-      photos: JSON.stringify(["https://images.unsplash.com/photo-1605276374104-dee2a0ed3cd6?w=1200&q=80"]),
-      featured: false, soldDate: new Date("2025-01-08"), soldPrice: 255000, featuredOrder: 5,
+      price: 156000, bedrooms: 4, bathrooms: 1, sqft: 1056,
+      propertyType: "Single Family", status: "Sold",
+      photos: JSON.stringify(["https://images.homes.com/listings/102/1509096092-268139541/106-westfield-dr-harrison-oh-primaryphoto.jpg"]),
+      featured: false, soldDate: new Date("2023-02-10"), soldPrice: 156000, featuredOrder: 99,
+    },
+    {
+      slug: "104-circle-dr-harrison",
+      address: "104 Circle Dr",
+      city: "Harrison", state: "OH", zip: "45030",
+      price: 240000, bedrooms: 3, bathrooms: 2, sqft: 1543,
+      propertyType: "Single Family", status: "Sold",
+      photos: JSON.stringify(["https://images.homes.com/listings/102/2661417574-284740512/104-circle-dr-harrison-oh-primaryphoto.jpg"]),
+      featured: false, soldDate: new Date("2022-02-15"), soldPrice: 240000, featuredOrder: 99,
+    },
+    {
+      slug: "380-gregorian-dr-fairfield",
+      address: "380 Gregorian Dr",
+      city: "Fairfield", state: "OH", zip: "45014",
+      price: 372225, bedrooms: 4, bathrooms: 3.5, sqft: 2521,
+      propertyType: "Single Family", status: "Sold",
+      photos: JSON.stringify(["https://images.homes.com/listings/102/1848428291-088389701/380-gregorian-dr-fairfield-oh-primaryphoto.jpg"]),
+      featured: false, soldDate: new Date("2021-09-20"), soldPrice: 372225, featuredOrder: 99,
     },
   ];
 
-  for (const listing of listings) {
+  for (const listing of soldListings) {
     await prisma.listing.upsert({
       where: { slug: listing.slug },
       update: listing,
       create: listing,
     });
-    console.log(`✓ Listing: ${listing.address}`);
+    console.log(`✓ Sold listing: ${listing.address}, ${listing.city}`);
   }
+
+  // ── Site settings ───────────────────────────────────────────────────────────
+  const settings = [
+    { key: "agentName", value: "Scott Windsor" },
+    { key: "agentPhone", value: "513-307-6449" },
+    { key: "agentEmail", value: "windsorinfinity@gmail.com" },
+    { key: "brokerage", value: "Align Right Realty Infinity" },
+    { key: "siteUrl", value: "https://www.scott-windsor.com" },
+  ];
+  for (const s of settings) {
+    await prisma.siteSettings.upsert({
+      where: { key: s.key },
+      update: { value: s.value },
+      create: s,
+    });
+  }
+  console.log("✓ Site settings");
 
   console.log("\n✅ Seed complete!");
 }
