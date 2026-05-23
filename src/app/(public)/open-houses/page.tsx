@@ -1,3 +1,4 @@
+export const dynamic = "force-dynamic";
 import { Metadata } from "next";
 import PublicLayout from "@/components/layout/PublicLayout";
 import { prisma } from "@/lib/prisma";
