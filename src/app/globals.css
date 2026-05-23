@@ -4,24 +4,177 @@
 
 :root {
   --background: #ffffff;
-  --foreground: #171717;
+  --foreground: #1A1A1A;
+  --navy: #2C2C2C;
+  --gold: #E8F840;
+  --gold-light: #F2FF60;
+  --charcoal: #2C2C2C;
+  --offwhite: #F5F5F5;
+  --body-text: #555555;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+@layer base {
+  * {
+    box-sizing: border-box;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    color: var(--foreground);
+    background: var(--background);
+    font-family: var(--font-inter), system-ui, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-playfair), Georgia, serif;
   }
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+@layer components {
+  .container-wide {
+    @apply max-w-8xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+
+  .section-padding {
+    @apply py-16 md:py-24 lg:py-30;
+  }
+
+  /* Primary CTA: charcoal bg, white text → on hover: lime bg, dark text */
+  .btn-gold {
+    @apply inline-flex items-center justify-center px-8 py-4 bg-navy text-white font-semibold text-sm uppercase tracking-widest rounded-none hover:bg-gold hover:text-[#1A1A1A] transition-all duration-300 font-inter;
+  }
+
+  /* Same as btn-gold — unified primary button style */
+  .btn-navy {
+    @apply inline-flex items-center justify-center px-8 py-4 bg-navy text-white font-semibold text-sm uppercase tracking-widest rounded-none hover:bg-gold hover:text-[#1A1A1A] transition-all duration-300 font-inter;
+  }
+
+  /* Outline: charcoal border + text → hover: lime fill, dark text */
+  .btn-outline-gold {
+    @apply inline-flex items-center justify-center px-8 py-4 border-2 border-navy text-navy font-semibold text-sm uppercase tracking-widest rounded-none hover:bg-gold hover:text-[#1A1A1A] hover:border-gold transition-all duration-300 font-inter;
+  }
+
+  /* Outline on dark surfaces: white border + text → hover: white fill, dark text */
+  .btn-outline-white {
+    @apply inline-flex items-center justify-center px-8 py-4 border-2 border-white text-white font-semibold text-sm uppercase tracking-widest rounded-none hover:bg-gold hover:text-[#1A1A1A] hover:border-gold transition-all duration-300 font-inter;
+  }
+
+  /* Eyebrow label — dark text, no lime (lime is unreadable on white) */
+  .label-gold {
+    @apply text-[#1A1A1A] text-xs font-bold uppercase tracking-widest font-inter;
+  }
+
+  .heading-xl {
+    @apply font-playfair text-4xl md:text-5xl lg:text-6xl font-bold leading-tight;
+  }
+
+  .heading-lg {
+    @apply font-playfair text-3xl md:text-4xl lg:text-5xl font-bold leading-tight;
+  }
+
+  .heading-md {
+    @apply font-playfair text-2xl md:text-3xl font-bold leading-tight;
+  }
+
+  .heading-sm {
+    @apply font-playfair text-xl md:text-2xl font-bold;
+  }
+
+  /* Lime accent underline */
+  .gold-underline {
+    @apply relative after:absolute after:bottom-0 after:left-0 after:w-16 after:h-0.5 after:bg-gold;
+  }
+
+  .card-listing {
+    @apply bg-white overflow-hidden shadow-md hover:shadow-xl hover:border-2 hover:border-navy transition-all duration-300;
+  }
+
+  .sold-badge {
+    @apply absolute top-4 left-4 text-xs font-bold uppercase tracking-wider px-3 py-1.5 animate-pulse-slow;
+    background-color: #0A1628;
+    color: #E8F840;
+  }
+
+  .status-badge {
+    @apply text-xs font-bold uppercase tracking-wider px-3 py-1;
+  }
+
+  /* Lime focus ring */
+  .form-input {
+    @apply w-full border border-gray-300 px-4 py-3 text-[#1A1A1A] placeholder-gray-400 focus:outline-none focus:border-gold focus:ring-2 focus:ring-gold transition-colors font-inter text-sm;
+  }
+
+  .form-label {
+    @apply block text-xs font-semibold uppercase tracking-wider text-[#1A1A1A] mb-2 font-inter;
+  }
+
+  .admin-card {
+    @apply bg-white rounded-lg shadow-sm border border-gray-200 p-6;
+  }
+
+  .admin-table {
+    @apply w-full text-sm;
+  }
+
+  .admin-table th {
+    @apply text-left text-xs font-semibold uppercase tracking-wider text-gray-500 border-b border-gray-200 pb-3 px-3;
+  }
+
+  .admin-table td {
+    @apply py-3 px-3 border-b border-gray-100 text-gray-700;
+  }
+
+  .admin-table tr:hover td {
+    @apply bg-gray-50;
+  }
 }
 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
   }
+
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+
+  /* White hero with subtle photo overlay */
+  .hero-overlay {
+    background: linear-gradient(
+      135deg,
+      rgba(255, 255, 255, 0.88) 0%,
+      rgba(255, 255, 255, 0.72) 100%
+    );
+  }
+
+  .gold-gradient {
+    background: linear-gradient(135deg, #E8F840 0%, #F2FF60 100%);
+  }
+
+  .navy-gradient {
+    background: linear-gradient(135deg, #2C2C2C 0%, #3C3C3C 100%);
+  }
 }
+
+/* Blog rich text styles */
+.prose-content h1 { @apply font-playfair text-3xl font-bold text-[#1A1A1A] mb-4 mt-8; }
+.prose-content h2 { @apply font-playfair text-2xl font-bold text-[#1A1A1A] mb-3 mt-7; }
+.prose-content h3 { @apply font-playfair text-xl font-bold text-[#1A1A1A] mb-3 mt-6; }
+.prose-content p { @apply text-[#555555] leading-relaxed mb-4; }
+.prose-content ul { @apply list-disc pl-6 mb-4 text-[#555555]; }
+.prose-content ol { @apply list-decimal pl-6 mb-4 text-[#555555]; }
+.prose-content li { @apply mb-2; }
+.prose-content a { @apply text-[#1A1A1A] underline hover:text-[#2C2C2C]; }
+.prose-content blockquote { @apply border-l-4 border-gold pl-4 italic text-[#555555] my-6; }
+.prose-content img { @apply w-full rounded mb-6; }
+.prose-content strong { @apply font-semibold; }

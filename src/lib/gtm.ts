@@ -1,0 +1,13 @@
+declare global {
+  interface Window {
+    dataLayer: Record<string, unknown>[];
+  }
+}
+
+export function pushGTMEvent(event: string, data?: Record<string, unknown>) {
+  if (typeof window === "undefined") return;
+  window.dataLayer = window.dataLayer || [];
+  window.dataLayer.push({ event, ...data });
+}
+
+export const GTM_ID = process.env.NEXT_PUBLIC_GTM_ID;
