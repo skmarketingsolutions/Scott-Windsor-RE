@@ -65,9 +65,9 @@ export default function NeighborhoodsPage() {
                     Explore {n.name} <ArrowRight className="w-3 h-3" />
                   </span>
                   {n.ctaHref && (
-                    <Link href={n.ctaHref} className="text-xs text-gray-500 underline font-inter mt-3 block hover:text-navy transition-colors" onClick={e => e.stopPropagation()}>
+                    <span className="text-xs text-gray-500 underline font-inter mt-3 block hover:text-navy transition-colors cursor-pointer">
                       View New Construction →
-                    </Link>
+                    </span>
                   )}
                 </div>
               </Link>
