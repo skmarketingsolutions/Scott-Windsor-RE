@@ -9,8 +9,6 @@ export const metadata: Metadata = {
     "Contact Scott Windsor — Harrison Ohio real estate broker. Call 513-307-6449 or fill out the form. Response within 24 hours.",
 };
 
-const GHL_CALENDAR_ID = process.env.NEXT_PUBLIC_GHL_CALENDAR_ID;
-
 export default function ContactPage() {
   return (
     <PublicLayout>
@@ -90,36 +88,6 @@ export default function ContactPage() {
                 </div>
               </div>
 
-              {/* GHL Calendar Embed */}
-              <div>
-                <h2 className="font-playfair text-2xl font-bold text-navy mb-4">
-                  Schedule a Call
-                </h2>
-                <div
-                  id="ghl-calendar"
-                  className="min-h-[400px] border border-gray-200 bg-offwhite flex items-center justify-center"
-                >
-                  {GHL_CALENDAR_ID ? (
-                    <iframe
-                      src={`https://api.leadconnectorhq.com/widget/booking/${GHL_CALENDAR_ID}`}
-                      className="w-full min-h-[400px] border-0"
-                      title="Schedule a Call with Scott Windsor"
-                    />
-                  ) : (
-                    <div className="text-center p-8">
-                      <p className="text-gray-400 text-sm font-inter">
-                        Calendar embed: add your GHL Calendar ID to enable scheduling.
-                      </p>
-                      <p className="text-gray-500 text-sm font-inter mt-2">
-                        Or call directly:{" "}
-                        <a href="tel:5133076449" className="text-[#1A1A1A] font-semibold">
-                          513-307-6449
-                        </a>
-                      </p>
-                    </div>
-                  )}
-                </div>
-              </div>
             </div>
           </div>
         </div>
