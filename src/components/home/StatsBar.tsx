@@ -23,13 +23,13 @@ const stats = [
     value: null,
     suffix: "",
     label: "Align Right Realty Infinity",
-    custom: "Broker/Owner",
+    custom: "Owner & Agent",
   },
   {
     icon: Users,
     value: 500,
     suffix: "+",
-    label: "Families Helped in SW Ohio",
+    label: "Families Helped Across Cincinnati",
   },
 ];
 

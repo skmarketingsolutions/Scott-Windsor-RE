@@ -4,9 +4,9 @@ import PublicLayout from "@/components/layout/PublicLayout";
 import LeadForm from "@/components/ui/LeadForm";
 
 export const metadata: Metadata = {
-  title: "Moving to Harrison Ohio 2026 | Complete Guide",
+  title: "Moving to Harrison, OH 2026 | Scott Windsor Realtor",
   description:
-    "Thinking about moving to Harrison Ohio? Complete guide to neighborhoods, schools, commute times, cost of living and home prices from local expert Scott Windsor.",
+    "Planning a move to Harrison OH? Scott Windsor covers neighborhoods, schools, commute times, cost of living & home prices in this complete local guide.",
 };
 
 const faqSchema = {
@@ -59,7 +59,7 @@ export default function MovingToHarrisonOhioPage() {
       {/* Hero */}
       <section className="bg-[#2C2C2C] pt-28 pb-16">
         <div className="container-wide">
-          <p className="text-[#E8F840] text-xs font-bold uppercase tracking-widest font-inter mb-3">
+          <p className="text-[#FF6B00] text-xs font-bold uppercase tracking-widest font-inter mb-3">
             Harrison OH Relocation Guide
           </p>
           <h1 className="font-playfair text-4xl md:text-5xl font-bold text-white max-w-3xl leading-tight">
@@ -291,7 +291,7 @@ export default function MovingToHarrisonOhioPage() {
             Ready to Make Harrison Home?
           </h2>
           <p className="text-white/70 font-inter mb-8">
-            Scott Windsor is Harrison&apos;s local broker with 24 years in this community.
+            Scott Windsor is Harrison&apos;s local real estate agent with 24 years in this community.
             He can walk you through every neighborhood, connect you with the right
             properties for your budget and lifestyle, and help you understand exactly
             what life here looks like before you commit.

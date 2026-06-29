@@ -85,7 +85,7 @@ export default function LeadForm({
   if (submitted) {
     return (
       <div className={`flex flex-col items-center justify-center text-center py-8 ${compact ? "" : "min-h-[200px]"}`}>
-        <CheckCircle className={`w-12 h-12 mb-4 ${dark ? "text-[#E8F840]" : "text-green-500"}`} />
+        <CheckCircle className={`w-12 h-12 mb-4 ${dark ? "text-[#FF6B00]" : "text-green-500"}`} />
         <h3 className={`font-playfair text-xl font-bold mb-2 ${dark ? "text-white" : "text-navy"}`}>
           Thank You!
         </h3>

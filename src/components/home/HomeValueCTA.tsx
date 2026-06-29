@@ -27,13 +27,13 @@ export default function HomeValueCTA() {
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
         >
-          <p className="label-gold mb-4 text-[#E8F840]">Free Home Valuation</p>
+          <p className="label-gold mb-4 text-[#FF6B00]">Free Home Valuation</p>
           <h2 className="font-playfair text-4xl md:text-5xl font-bold text-white max-w-3xl mx-auto mb-6">
-            What&apos;s Your Harrison Ohio Home Worth?
+            What&apos;s Your Cincinnati Home Worth?
           </h2>
           <p className="text-xl text-white/70 max-w-xl mx-auto mb-10 font-inter">
             Online estimates are based on algorithms. Scott&apos;s are based on 24
-            years of knowing this market personally.
+            years of knowing the Greater Cincinnati market personally.
           </p>
 
           <Link href="/home-value" className="btn-gold text-base mb-12 inline-flex">
@@ -47,7 +47,7 @@ export default function HomeValueCTA() {
               { icon: Award, text: "No Obligation" },
             ].map(({ icon: Icon, text }) => (
               <div key={text} className="flex items-center gap-3">
-                <Icon className="w-5 h-5 text-[#E8F840]" />
+                <Icon className="w-5 h-5 text-[#FF6B00]" />
                 <span className="text-white/70 text-sm font-inter">{text}</span>
               </div>
             ))}

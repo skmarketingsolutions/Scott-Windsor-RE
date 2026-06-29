@@ -95,9 +95,9 @@ export default async function BlogPostPage({ params }: Props) {
                 </div>
                 <div>
                   <p className="font-playfair font-bold text-navy">Scott Windsor</p>
-                  <p className="text-xs text-gray-500 uppercase tracking-wider font-inter mb-2">Broker/Owner, Align Right Realty Infinity</p>
+                  <p className="text-xs text-gray-500 uppercase tracking-wider font-inter mb-2">Real Estate Agent, Align Right Realty Infinity</p>
                   <p className="text-gray-600 text-sm font-inter leading-relaxed">
-                    Retired Harrison firefighter of 24 years. Multi-million dollar producing real estate broker/owner serving Harrison, Ohio and Southwest Ohio since 2004.
+                    Retired Harrison firefighter of 24 years. Multi-million dollar producing real estate agent serving Harrison, Ohio and Southwest Ohio since 2004.
                     <a href="tel:5133076449" className="text-navy font-semibold ml-1 hover:text-gold transition-colors">513-307-6449</a>
                   </p>
                 </div>

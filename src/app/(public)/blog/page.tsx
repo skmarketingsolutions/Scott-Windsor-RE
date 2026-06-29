@@ -8,9 +8,9 @@ import { formatDate } from "@/lib/utils";
 import { Calendar, ArrowRight } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Harrison Ohio Real Estate Blog | Market Updates & Neighborhood Guides",
+  title: "Harrison OH Real Estate Blog Market Updates | Scott Windsor",
   description:
-    "Harrison Ohio real estate insights from Scott Windsor — local broker with 24 years in the community. Market updates, neighborhood guides, buyer and seller tips.",
+    "Scott Windsor shares Harrison OH real estate insights — market updates, neighborhood guides & buyer and seller tips from a 24-year local expert.",
   keywords: ["harrison ohio real estate blog", "harrison ohio housing market", "harrison ohio market update 2025"],
 };
 
@@ -30,12 +30,12 @@ export default async function BlogPage({ searchParams }: { searchParams: { categ
     <PublicLayout>
       <div className="bg-navy pt-28 pb-16">
         <div className="container-wide">
-          <p className="text-[#E8F840] text-xs font-bold uppercase tracking-widest font-inter mb-3">Local Expertise</p>
+          <p className="text-[#FF6B00] text-xs font-bold uppercase tracking-widest font-inter mb-3">Local Expertise</p>
           <h1 className="font-playfair text-4xl md:text-5xl font-bold text-white mb-4">
-            Harrison Ohio Real Estate Insights
+            Greater Cincinnati Real Estate Insights
           </h1>
           <p className="text-white/70 text-lg font-inter max-w-xl">
-            Market updates, neighborhood guides, and straight talk about Southwest Ohio real estate, from someone who actually lives here.
+            Market updates, neighborhood guides, and straight talk about Greater Cincinnati real estate, from someone who actually lives here.
           </p>
         </div>
       </div>

@@ -3,9 +3,9 @@ import PublicLayout from "@/components/layout/PublicLayout";
 import LeadForm from "@/components/ui/LeadForm";
 
 export const metadata: Metadata = {
-  title: "Harrison Ohio Property Tax Guide 2026 | Scott Windsor",
+  title: "Harrison OH Property Tax Guide 2026 | Scott Windsor",
   description:
-    "Complete guide to property taxes in Harrison Ohio and Hamilton County. Rates, exemptions, and how taxes affect your home purchase from Scott Windsor.",
+    "Understand property taxes in Harrison OH & Hamilton County. Scott Windsor covers rates, exemptions & how taxes impact your home purchase in 2026.",
 };
 
 const faqSchema = {
@@ -57,7 +57,7 @@ export default function HarrisonOhioPropertyTaxesPage() {
 
       <section className="bg-[#2C2C2C] pt-28 pb-16">
         <div className="container-wide">
-          <p className="text-[#E8F840] text-xs font-bold uppercase tracking-widest font-inter mb-3">
+          <p className="text-[#FF6B00] text-xs font-bold uppercase tracking-widest font-inter mb-3">
             Harrison OH Property Tax Guide
           </p>
           <h1 className="font-playfair text-4xl md:text-5xl font-bold text-white max-w-3xl leading-tight">

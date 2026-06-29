@@ -36,7 +36,7 @@ export default function OpenHouseWidget({ openHouses }: OpenHouseWidgetProps) {
           />
           <Link
             href="/open-houses"
-            className="text-[#E8F840] font-semibold text-sm uppercase tracking-wider hover:text-white transition-colors font-inter whitespace-nowrap"
+            className="text-[#FF6B00] font-semibold text-sm uppercase tracking-wider hover:text-white transition-colors font-inter whitespace-nowrap"
           >
             All Open Houses →
           </Link>
@@ -57,12 +57,12 @@ export default function OpenHouseWidget({ openHouses }: OpenHouseWidgetProps) {
               >
                 <div className="flex items-start gap-4">
                   <div className="bg-gray-100 p-3 flex-shrink-0">
-                    <Calendar className="w-6 h-6 text-[#E8F840]" />
+                    <Calendar className="w-6 h-6 text-[#FF6B00]" />
                   </div>
                   <div className="flex-1 min-w-0">
                     <div className="flex items-center gap-2 mb-1">
-                      <Clock className="w-3.5 h-3.5 text-[#E8F840]" />
-                      <span className="text-[#E8F840] text-xs font-semibold uppercase tracking-wider font-inter">
+                      <Clock className="w-3.5 h-3.5 text-[#FF6B00]" />
+                      <span className="text-[#FF6B00] text-xs font-semibold uppercase tracking-wider font-inter">
                         {oh.date} &bull; {oh.startTime} – {oh.endTime}
                       </span>
                     </div>
@@ -70,7 +70,7 @@ export default function OpenHouseWidget({ openHouses }: OpenHouseWidgetProps) {
                       {oh.listing.address}
                     </h3>
                     <div className="flex items-center gap-1 text-white/60 text-sm mb-2">
-                      <MapPin className="w-3.5 h-3.5 text-[#E8F840]" />
+                      <MapPin className="w-3.5 h-3.5 text-[#FF6B00]" />
                       <span>{oh.listing.city}, OH</span>
                     </div>
                     <div className="flex items-center gap-3 text-white/70 text-sm">

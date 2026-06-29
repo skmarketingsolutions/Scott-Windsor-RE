@@ -115,7 +115,7 @@ export default function SchoolsSection() {
             transition={{ duration: 0.6 }}
             className="bg-[#2C2C2C] p-8 md:p-12"
           >
-            <p className="text-[#E8F840] text-xs font-bold uppercase tracking-widest font-inter mb-4">
+            <p className="text-[#FF6B00] text-xs font-bold uppercase tracking-widest font-inter mb-4">
               District Performance
             </p>
             <h3 className="font-playfair text-2xl font-bold text-white mb-6">
@@ -125,7 +125,7 @@ export default function SchoolsSection() {
             <div className="grid grid-cols-2 gap-4 mb-8">
               {stats.map((s) => (
                 <div key={s.label} className="bg-white/10 p-4">
-                  <p className="font-playfair text-2xl font-bold text-[#E8F840]">
+                  <p className="font-playfair text-2xl font-bold text-[#FF6B00]">
                     {s.value}
                   </p>
                   <p className="text-white/70 text-xs font-inter mt-1">{s.label}</p>
@@ -146,7 +146,7 @@ export default function SchoolsSection() {
                 "Reading proficiency 68% vs 60% Ohio average",
               ].map((item) => (
                 <div key={item} className="flex items-start gap-3">
-                  <div className="w-1.5 h-1.5 rounded-full bg-[#E8F840] mt-2 flex-shrink-0" />
+                  <div className="w-1.5 h-1.5 rounded-full bg-[#FF6B00] mt-2 flex-shrink-0" />
                   <p className="text-white/80 text-sm font-inter">{item}</p>
                 </div>
               ))}

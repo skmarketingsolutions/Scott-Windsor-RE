@@ -86,7 +86,7 @@ export default function MortgageCalculator({
       </div>
 
       <div className="mt-6 p-5 bg-navy text-white">
-        <p className="text-xs uppercase tracking-widest text-[#E8F840] mb-1 font-inter">
+        <p className="text-xs uppercase tracking-widest text-[#FF6B00] mb-1 font-inter">
           Estimated Monthly Payment
         </p>
         <p className="font-playfair text-3xl font-bold">

@@ -76,8 +76,8 @@ export default function TestimonialsSection({
         >
           <SectionHeader
             label="Client Stories"
-            title="What Harrison Families Say"
-            subtitle="Real results from real neighbors."
+            title="What Cincinnati Families Say"
+            subtitle="Real results from real clients across Greater Cincinnati."
             centered
             className="mb-12"
           />

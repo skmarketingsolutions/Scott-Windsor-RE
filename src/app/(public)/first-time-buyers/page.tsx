@@ -28,7 +28,7 @@ const faqSchema = {
 
 const steps = [
   { num: "1", title: "Get Pre-Approved", body: "Before you look at homes, talk to a lender. Pre-approval tells you your real budget and makes your offer competitive. Scott can refer you to trusted local lenders who specialize in first-time buyers." },
-  { num: "2", title: "Talk to Scott", body: "Your agent matters. As a broker/owner who knows every neighborhood in Harrison personally, Scott will make sure you look at the right homes and avoid the wrong ones." },
+  { num: "2", title: "Talk to Scott", body: "Your agent matters. As a real estate agent who knows every neighborhood in Harrison personally, Scott will make sure you look at the right homes and avoid the wrong ones." },
   { num: "3", title: "Define Your Must-Haves", body: "Bedrooms, location, school district, commute to Cincinnati. Scott helps you sort what matters from what's nice-to-have, so you don't fall in love with a house that doesn't fit." },
   { num: "4", title: "Search & Tour Homes", body: "Scott shows you homes that match your criteria, including some not yet on the market. He'll point out what's priced right, what's overpriced, and what needs work." },
   { num: "5", title: "Make an Offer", body: "Scott writes a competitive, clean offer. He'll advise on price, contingencies, and how to structure the offer to win, especially in a competitive situation." },
@@ -44,7 +44,7 @@ export default function FirstTimeBuyersPage() {
 
       <div className="bg-navy pt-28 pb-16">
         <div className="container-wide">
-          <p className="text-[#E8F840] text-xs font-bold uppercase tracking-widest font-inter mb-3">Buyer's Guide</p>
+          <p className="text-[#FF6B00] text-xs font-bold uppercase tracking-widest font-inter mb-3">Buyer's Guide</p>
           <h1 className="font-playfair text-4xl md:text-5xl font-bold text-white mb-4">
             First Time Home Buyer Guide: Harrison Ohio
           </h1>
@@ -64,7 +64,7 @@ export default function FirstTimeBuyersPage() {
                 {steps.map((step) => (
                   <div key={step.num} className="flex gap-6 group">
                     <div className="flex-shrink-0 w-12 h-12 bg-navy flex items-center justify-center">
-                      <span className="font-playfair font-bold text-[#E8F840] text-lg">{step.num}</span>
+                      <span className="font-playfair font-bold text-[#FF6B00] text-lg">{step.num}</span>
                     </div>
                     <div className="flex-1 border-b border-gray-100 pb-8">
                       <h3 className="font-playfair font-bold text-navy text-xl mb-2">{step.title}</h3>

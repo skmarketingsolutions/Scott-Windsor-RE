@@ -22,7 +22,7 @@ export default function RecentSales({ listings }: RecentSalesProps) {
           <SectionHeader
             label="Proven Track Record"
             title="Recently Sold in Harrison"
-            subtitle="Scott's recent closings. Proof of what's possible when you work with the right broker."
+            subtitle="Scott's recent closings. Proof of what's possible when you work with the right agent."
           />
           <Link
             href="/sold"
@@ -61,7 +61,7 @@ export default function RecentSales({ listings }: RecentSalesProps) {
                     )}
                     <div
                       className="absolute top-3 left-3 text-xs font-bold uppercase tracking-wider px-3 py-1.5 font-inter"
-                      style={{ backgroundColor: "#0A1628", color: "#E8F840" }}
+                      style={{ backgroundColor: "#0A1628", color: "#FF6B00" }}
                     >
                       SOLD
                     </div>
@@ -91,18 +91,18 @@ export default function RecentSales({ listings }: RecentSalesProps) {
           transition={{ duration: 0.6 }}
           className="bg-[#2C2C2C] p-8 md:p-12 text-center"
         >
-          <p className="text-[#E8F840] text-xs font-bold uppercase tracking-widest font-inter mb-3">
+          <p className="text-[#FF6B00] text-xs font-bold uppercase tracking-widest font-inter mb-3">
             Free Market Analysis
           </p>
           <h3 className="font-playfair text-2xl md:text-3xl font-bold text-white mb-4">
-            Scott has helped dozens of Harrison Ohio families sell their homes.
+            Scott has helped hundreds of Harrison Ohio families sell their homes.
           </h3>
           <p className="text-white/70 font-inter max-w-xl mx-auto mb-8">
             Contact him for a free market analysis of your property. No obligation, no pressure. Just honest data about what your home is worth right now.
           </p>
           <Link
             href="/home-value"
-            className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-[#E8F840] text-[#1A1A1A] font-bold text-sm uppercase tracking-widest hover:bg-[#F2FF60] transition-all duration-300 font-inter"
+            className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-[#FF6B00] text-[#1A1A1A] font-bold text-sm uppercase tracking-widest hover:bg-[#FF8C33] transition-all duration-300 font-inter"
           >
             Get a Free Home Valuation
             <ArrowRight className="w-4 h-4" />

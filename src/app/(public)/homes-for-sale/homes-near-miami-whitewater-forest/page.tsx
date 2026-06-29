@@ -6,7 +6,7 @@ import LeadForm from "@/components/ui/LeadForm";
 export const metadata: Metadata = {
   title: "Homes Near Miami Whitewater Forest | Scott Windsor",
   description:
-    "Find homes near Miami Whitewater Forest in Harrison Ohio. Parks of Whitewater and surrounding communities. Scott Windsor, local broker.",
+    "Find homes near Miami Whitewater Forest in Harrison Ohio. Parks of Whitewater and surrounding communities. Scott Windsor, local real estate agent.",
 };
 
 const faqSchema = {
@@ -51,7 +51,7 @@ export default function HomesNearMiamiWhitewaterForest() {
       {/* Hero */}
       <section className="bg-[#2C2C2C] pt-28 pb-16">
         <div className="container-wide">
-          <p className="text-[#E8F840] text-xs font-bold uppercase tracking-widest font-inter mb-3">
+          <p className="text-[#FF6B00] text-xs font-bold uppercase tracking-widest font-inter mb-3">
             Miami Whitewater Forest Area Homes
           </p>
           <h1 className="font-playfair text-4xl md:text-5xl font-bold text-white max-w-3xl leading-tight">

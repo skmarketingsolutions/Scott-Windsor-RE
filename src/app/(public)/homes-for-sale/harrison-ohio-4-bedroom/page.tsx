@@ -5,7 +5,7 @@ import LeadForm from "@/components/ui/LeadForm";
 export const metadata: Metadata = {
   title: "4 Bedroom Homes Harrison OH | Scott Windsor Realtor",
   description:
-    "Search 4 bedroom homes for sale in Harrison Ohio. New construction and resale options in 45030. Scott Windsor, local broker.",
+    "Search 4 bedroom homes for sale in Harrison Ohio. New construction and resale options in 45030. Scott Windsor, local real estate agent.",
 };
 
 const faqSchema = {
@@ -50,7 +50,7 @@ export default function Harrison4Bedroom() {
       {/* Hero */}
       <section className="bg-[#2C2C2C] pt-28 pb-16">
         <div className="container-wide">
-          <p className="text-[#E8F840] text-xs font-bold uppercase tracking-widest font-inter mb-3">
+          <p className="text-[#FF6B00] text-xs font-bold uppercase tracking-widest font-inter mb-3">
             4 Bedroom Homes Harrison OH
           </p>
           <h1 className="font-playfair text-4xl md:text-5xl font-bold text-white max-w-3xl leading-tight">
@@ -119,14 +119,14 @@ export default function Harrison4Bedroom() {
           </p>
 
           <h2 className="font-playfair text-2xl font-bold text-[#1A1A1A] mb-4 mt-8">
-            Featured: 4-Bedroom Listing in Anderson Township
+            Recent 4-Bedroom Sale: Harrison, OH
           </h2>
           <p className="text-[#555555] leading-relaxed mb-4 font-inter">
-            Scott Windsor currently has 2289 Lauren Close in Anderson Township listed at $625,000.
-            This 4-bedroom, 4-bathroom home at 3,990 square feet represents the upper range of
-            what is available in the broader market Scott serves. If you are looking at the luxury
-            end of the 4-bedroom category, call Scott directly to discuss this property and others
-            like it.
+            A recent example of Scott&apos;s work in this segment: 1516 Fairchild Dr, Harrison, OH —
+            a 4-bedroom, 3.5-bathroom home at 3,240 square feet that sold for $525,000. Properties
+            like this represent the upper tier of Harrison&apos;s 4-bedroom market and demonstrate what
+            well-priced, well-presented homes can achieve with the right agent. Call Scott directly
+            to discuss current 4-bedroom listings and what homes like yours are actually worth.
           </p>
 
           <h2 className="font-playfair text-2xl font-bold text-[#1A1A1A] mb-4 mt-8">

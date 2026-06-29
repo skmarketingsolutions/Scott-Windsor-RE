@@ -34,7 +34,7 @@ const faqSchema = {
       name: "What are home prices in Anderson Township Ohio?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Home prices in Anderson Township range from approximately $350,000 to well over $625,000. The market skews upscale, with a strong concentration of homes in the $400,000 to $600,000 range. An example of the upper end is 2289 Lauren Close, listed at $625,000 for a 4-bedroom, 4-bath home with 3,990 square feet. Buyers moving up from other Hamilton County locations will find Anderson Township pricing reflects the premium schools and neighborhood quality the area delivers.",
+        text: "Home prices in Anderson Township range from approximately $350,000 to well over $650,000. The market skews upscale, with a strong concentration of homes in the $400,000 to $600,000 range. A recent closing in this area: 11440 Gideon Ln, Cincinnati sold for $650,000 — a 4-bedroom, 2.5-bathroom home at 2,845 square feet. Buyers moving up from other Hamilton County locations will find Anderson Township pricing reflects the premium schools and neighborhood quality the area delivers.",
       },
     },
   ],
@@ -51,7 +51,7 @@ export default function AndersonTownshipOhioPage() {
       {/* Hero */}
       <section className="bg-[#2C2C2C] pt-28 pb-16">
         <div className="container-wide">
-          <p className="text-[#E8F840] text-xs font-bold uppercase tracking-widest font-inter mb-3">
+          <p className="text-[#FF6B00] text-xs font-bold uppercase tracking-widest font-inter mb-3">
             Premium Cincinnati Suburb
           </p>
           <h1 className="font-playfair text-4xl md:text-5xl font-bold text-white max-w-3xl leading-tight">
@@ -86,11 +86,11 @@ export default function AndersonTownshipOhioPage() {
             Current Listings: Anderson Township
           </h2>
           <p className="text-[#555555] leading-relaxed mb-4 font-inter">
-            Scott Windsor actively lists and sells in Anderson Township. A current example is
-            2289 Lauren Close, listed at $625,000. This 4-bedroom, 4-bathroom home offers 3,990
-            square feet of living space in one of the township&apos;s established neighborhoods.
-            Properties at this level attract buyers moving up from other Hamilton County locations
-            and professionals who want a genuinely premium Cincinnati suburb experience.
+            Scott Windsor actively lists and sells in Anderson Township. A recent closing: 11440
+            Gideon Ln, Cincinnati — a 4-bedroom, 2.5-bathroom home at 2,845 square feet, sold for
+            $650,000 in January 2026. Properties at this level attract buyers moving up from other
+            Hamilton County locations and professionals who want a genuinely premium Cincinnati
+            suburb experience.
           </p>
           <p className="text-[#555555] leading-relaxed mb-4 font-inter">
             Inventory in Anderson Township moves at a measured pace. This is not a high-turnover
@@ -182,10 +182,9 @@ export default function AndersonTownshipOhioPage() {
               </h3>
               <p className="text-[#555555] font-inter leading-relaxed">
                 Home prices in Anderson Township range from approximately $350,000 to well over
-                $625,000. The market skews upscale, with a strong concentration of homes
-                between $400,000 and $600,000. An example from Scott&apos;s active listings is
-                2289 Lauren Close at $625,000 for a 4-bedroom, 4-bath home with 3,990 square
-                feet.
+                $650,000. The market skews upscale, with a strong concentration of homes
+                between $400,000 and $600,000. A recent Scott Windsor closing: 11440 Gideon Ln
+                sold for $650,000 — a 4-bedroom, 2.5-bath home at 2,845 square feet.
               </p>
             </div>
           </div>

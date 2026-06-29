@@ -6,9 +6,9 @@ import ListingCard from "@/components/ui/ListingCard";
 import LeadForm from "@/components/ui/LeadForm";
 
 export const metadata: Metadata = {
-  title: "Recently Sold Homes in Harrison Ohio | Scott Windsor",
+  title: "Recently Sold Homes in Harrison, OH | Scott Windsor Realtor",
   description:
-    "View Scott Windsor's recently sold homes in Harrison, Cleves, North Bend, and Southwest Ohio. Multi-million dollar producing broker/owner with a proven track record.",
+    "See recently sold homes by Scott Windsor in Harrison, Cleves, North Bend & Southwest Ohio — multi-million dollar agent with a proven track record.",
   keywords: [
     "recently sold homes harrison ohio",
     "sold homes harrison oh",
@@ -32,7 +32,7 @@ export default async function SoldPage() {
       {/* Hero */}
       <div className="bg-navy pt-28 pb-16">
         <div className="container-wide">
-          <p className="text-[#E8F840] text-xs font-bold uppercase tracking-widest font-inter mb-3">Proven Track Record</p>
+          <p className="text-[#FF6B00] text-xs font-bold uppercase tracking-widest font-inter mb-3">Proven Track Record</p>
           <h1 className="font-playfair text-4xl md:text-5xl font-bold text-white mb-4">
             Recently Sold Homes in Harrison Ohio
           </h1>
@@ -40,6 +40,28 @@ export default async function SoldPage() {
             These are real results for real Harrison families. When you list with Scott,
             you&apos;re listing with someone who knows how to close.
           </p>
+        </div>
+      </div>
+
+      {/* Track Record Banner */}
+      <div className="bg-[#FF6B00] py-5">
+        <div className="container-wide">
+          <div className="flex flex-wrap items-center justify-center gap-x-10 gap-y-3 text-center">
+            <div className="flex items-center gap-3">
+              <span className="font-playfair text-3xl font-bold text-[#1A1A1A]">500+</span>
+              <span className="text-[#1A1A1A] font-semibold font-inter text-sm uppercase tracking-wider">Families Helped</span>
+            </div>
+            <div className="w-px h-8 bg-[#1A1A1A]/20 hidden sm:block" />
+            <div className="flex items-center gap-3">
+              <span className="font-playfair text-3xl font-bold text-[#1A1A1A]">Hundreds</span>
+              <span className="text-[#1A1A1A] font-semibold font-inter text-sm uppercase tracking-wider">of Homes Sold</span>
+            </div>
+            <div className="w-px h-8 bg-[#1A1A1A]/20 hidden sm:block" />
+            <div className="flex items-center gap-3">
+              <span className="font-playfair text-3xl font-bold text-[#1A1A1A]">SW Ohio</span>
+              <span className="text-[#1A1A1A] font-semibold font-inter text-sm uppercase tracking-wider">Multi-Million Dollar Producer</span>
+            </div>
+          </div>
         </div>
       </div>
 
@@ -88,7 +110,7 @@ export default async function SoldPage() {
         <div className="container-wide">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
-              <p className="text-[#E8F840] text-xs font-bold uppercase tracking-widest font-inter mb-4">Thinking About Selling?</p>
+              <p className="text-[#FF6B00] text-xs font-bold uppercase tracking-widest font-inter mb-4">Thinking About Selling?</p>
               <h2 className="font-playfair text-3xl md:text-4xl font-bold text-white mb-6">
                 Let&apos;s Talk About What Your Home Is Worth
               </h2>

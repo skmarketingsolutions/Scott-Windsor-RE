@@ -4,9 +4,9 @@ import LeadForm from "@/components/ui/LeadForm";
 import { CheckCircle, Home } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "New Construction Homes in Harrison Ohio | Ryan Homes & Drees Homes",
+  title: "New Construction Homes Harrison OH 2026 | Scott Windsor",
   description:
-    "New construction homes in Harrison Ohio — Ryan Homes in Whitewater Trails and Sedona Reserve, Drees Homes in Trailhead. Working with a buyer's agent costs you nothing and Scott negotiates on your behalf.",
+    "Explore new construction in Harrison OH from Ryan Homes, Drees Homes & M/I Homes. Scott Windsor helps buyers navigate new builds at no extra cost.",
   keywords: [
     "new construction homes harrison ohio",
     "ryan homes harrison ohio",
@@ -26,7 +26,7 @@ export default function NewConstructionPage() {
         <div className="container-wide">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div>
-              <p className="text-[#E8F840] text-xs font-bold uppercase tracking-widest font-inter mb-4">New Construction</p>
+              <p className="text-[#FF6B00] text-xs font-bold uppercase tracking-widest font-inter mb-4">New Construction</p>
               <h1 className="font-playfair text-4xl md:text-5xl font-bold text-white mb-6 leading-tight">
                 New Construction Homes in Harrison Ohio
               </h1>
@@ -36,7 +36,7 @@ export default function NewConstructionPage() {
                 offering modern floor plans starting in the low-$300s.
               </p>
               <div className="bg-white/10 border border-white/20 p-5 mb-6">
-                <p className="text-[#E8F840] font-bold font-inter mb-1 text-sm uppercase tracking-wide">Important for Buyers</p>
+                <p className="text-[#FF6B00] font-bold font-inter mb-1 text-sm uppercase tracking-wide">Important for Buyers</p>
                 <p className="text-white/80 text-sm font-inter leading-relaxed">
                   Working with a buyer&apos;s agent on new construction costs you nothing &mdash;
                   the builder pays Scott&apos;s commission. And unlike going directly to the
@@ -88,13 +88,13 @@ export default function NewConstructionPage() {
               <div key={community.name} className="border border-gray-200 overflow-hidden">
                 <div className="bg-navy p-6">
                   <div className="flex items-center gap-3 mb-3">
-                    <Home className="w-6 h-6 text-[#E8F840]" />
+                    <Home className="w-6 h-6 text-[#FF6B00]" />
                     <div>
                       <h3 className="font-playfair font-bold text-white text-xl">{community.name}</h3>
                       <p className="text-white/60 text-xs font-semibold uppercase tracking-wider font-inter">{community.tagline}</p>
                     </div>
                   </div>
-                  <p className="text-[#E8F840] font-playfair font-bold text-lg">{community.priceRange}</p>
+                  <p className="text-[#FF6B00] font-playfair font-bold text-lg">{community.priceRange}</p>
                 </div>
                 <div className="p-6">
                   <p className="text-gray-600 font-inter text-sm leading-relaxed mb-4" dangerouslySetInnerHTML={{ __html: community.body }} />
@@ -143,7 +143,7 @@ export default function NewConstructionPage() {
                 <div className="bg-[#2D3A2D] p-6">
                   <h3 className="font-playfair font-bold text-white text-xl mb-1">{plan.name}</h3>
                   <div className="flex gap-4 text-xs font-inter">
-                    <span className="text-[#E8F840] font-semibold">{plan.priceRange}</span>
+                    <span className="text-[#FF6B00] font-semibold">{plan.priceRange}</span>
                     <span className="text-white/60" dangerouslySetInnerHTML={{ __html: plan.sqft }} />
                   </div>
                 </div>
@@ -169,7 +169,7 @@ export default function NewConstructionPage() {
         <div className="container-wide">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div>
-              <p className="text-[#E8F840] text-xs font-bold uppercase tracking-widest font-inter mb-3">Why It Matters</p>
+              <p className="text-[#FF6B00] text-xs font-bold uppercase tracking-widest font-inter mb-3">Why It Matters</p>
               <h2 className="font-playfair text-3xl font-bold text-white mb-6">
                 Working with Scott on New Construction Costs You Nothing and Protects You from Everything
               </h2>
@@ -184,7 +184,7 @@ export default function NewConstructionPage() {
                   { title: "Timeline Management", body: "Builds run long. Scott manages communication with the builder and protects your earnest money if timelines slip." },
                 ].map(({ title, body }) => (
                   <div key={title} className="flex gap-4">
-                    <CheckCircle className="w-5 h-5 text-[#E8F840] flex-shrink-0 mt-0.5" />
+                    <CheckCircle className="w-5 h-5 text-[#FF6B00] flex-shrink-0 mt-0.5" />
                     <div>
                       <p className="font-semibold text-white font-inter mb-0.5">{title}</p>
                       <p className="text-white/60 text-sm font-inter">{body}</p>

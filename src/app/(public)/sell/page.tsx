@@ -8,9 +8,9 @@ import { CheckCircle } from "lucide-react";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Sell Your Home in Harrison Ohio | Scott Windsor Realtor",
+  title: "Sell Your Harrison Ohio Home Fast | Scott Windsor Realtor",
   description:
-    "Sell your Harrison Ohio home with Scott Windsor — multi-million dollar producing broker/owner. Free valuation, proven marketing strategy, results. Call 513-307-6449.",
+    "Ready to sell your Harrison OH home? Scott Windsor — top producing agent offering free valuation & proven marketing strategy. Call 513-307-6449.",
   keywords: [
     "sell my home harrison ohio",
     "list my house harrison ohio",
@@ -79,7 +79,7 @@ export default async function SellPage() {
         <div className="container-wide">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div>
-              <p className="text-[#E8F840] text-xs font-bold uppercase tracking-widest font-inter mb-4">Sell Your Home</p>
+              <p className="text-[#FF6B00] text-xs font-bold uppercase tracking-widest font-inter mb-4">Sell Your Home</p>
               <h1 className="font-playfair text-4xl md:text-5xl font-bold text-white mb-6 leading-tight">
                 Sell Your Home in Harrison Ohio
               </h1>
@@ -91,14 +91,14 @@ export default async function SellPage() {
               <ul className="space-y-3">
                 {["Free, no-obligation home valuation", "Proven marketing strategy", "24-year local market expertise", "Direct broker access, not an assistant"].map(item => (
                   <li key={item} className="flex items-center gap-3 text-white/80 font-inter">
-                    <CheckCircle className="w-4 h-4 text-[#E8F840] flex-shrink-0" />
+                    <CheckCircle className="w-4 h-4 text-[#FF6B00] flex-shrink-0" />
                     {item}
                   </li>
                 ))}
               </ul>
             </div>
             <div className="bg-white shadow-2xl">
-              <div className="bg-[#E8F840] px-8 py-5">
+              <div className="bg-[#FF6B00] px-8 py-5">
                 <h2 className="font-playfair text-xl font-bold text-[#2C2C2C]">Start Your Home Sale</h2>
                 <p className="text-[#2C2C2C]/60 text-sm font-inter mt-0.5">Scott will follow up personally, usually same day.</p>
               </div>
@@ -137,10 +137,10 @@ export default async function SellPage() {
       <div className="bg-[#F5F5F5] py-4 border-b border-gray-200">
         <div className="container-wide flex flex-wrap gap-6 text-sm font-inter">
           <span className="text-gray-500">Related:</span>
-          <Link href="/harrison-ohio-real-estate-market" className="text-[#2C2C2C] hover:text-[#E8F840] font-semibold transition-colors">
+          <Link href="/harrison-ohio-real-estate-market" className="text-[#2C2C2C] hover:text-[#FF6B00] font-semibold transition-colors">
             Harrison Ohio Market Report 2026
           </Link>
-          <Link href="/sell/home-value-harrison-ohio" className="text-[#2C2C2C] hover:text-[#E8F840] font-semibold transition-colors">
+          <Link href="/sell/home-value-harrison-ohio" className="text-[#2C2C2C] hover:text-[#FF6B00] font-semibold transition-colors">
             Free Home Valuation Harrison Ohio
           </Link>
         </div>
@@ -171,14 +171,14 @@ export default async function SellPage() {
               </div>
             </div>
             <div className="bg-navy p-8 md:p-10">
-              <p className="text-[#E8F840] text-xs font-bold uppercase tracking-widest font-inter mb-3">Proven Results</p>
+              <p className="text-[#FF6B00] text-xs font-bold uppercase tracking-widest font-inter mb-3">Proven Results</p>
               <h3 className="font-playfair text-2xl font-bold text-white mb-6">Recent Sales</h3>
               {sold.length > 0 ? (
                 <div className="space-y-4">
                   {sold.map(l => (
                     <div key={l.id} className="border border-white/10 p-4 text-white">
                       <p className="font-semibold font-inter">{l.address}, {l.city}</p>
-                      <p className="text-[#E8F840] font-playfair font-bold text-lg">${l.price.toLocaleString()}</p>
+                      <p className="text-[#FF6B00] font-playfair font-bold text-lg">${l.price.toLocaleString()}</p>
                     </div>
                   ))}
                 </div>

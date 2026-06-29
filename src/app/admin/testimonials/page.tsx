@@ -77,7 +77,7 @@ export default function AdminTestimonialsPage() {
           <div key={t.id} className={`admin-card flex items-start gap-4 ${!t.visible ? "opacity-50" : ""}`}>
             <div className="flex-1">
               <div className="flex items-center gap-2 mb-1">
-                {Array.from({ length: t.starRating }).map((_, i) => <Star key={i} className="w-3.5 h-3.5 text-[#1A1A1A] fill-[#E8F840]" />)}
+                {Array.from({ length: t.starRating }).map((_, i) => <Star key={i} className="w-3.5 h-3.5 text-[#1A1A1A] fill-[#FF6B00]" />)}
               </div>
               <p className="font-inter italic text-gray-700 mb-2 text-sm">&ldquo;{t.quote}&rdquo;</p>
               <p className="font-semibold text-navy text-sm font-inter">{t.clientName}{t.city ? ` — ${t.city}` : ""}</p>

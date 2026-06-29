@@ -6,7 +6,7 @@ import LeadForm from "@/components/ui/LeadForm";
 export const metadata: Metadata = {
   title: "Home Value Harrison Ohio 2026 | Free CMA Scott Windsor",
   description:
-    "Find out what your Harrison Ohio home is worth in 2026. Get a free comparative market analysis from local broker Scott Windsor at Align Right Realty Infinity.",
+    "Find out what your Harrison Ohio home is worth in 2026. Get a free comparative market analysis from local real estate agent Scott Windsor at Align Right Realty Infinity.",
 };
 
 const faqSchema = {
@@ -59,14 +59,14 @@ export default function HomeValueHarrisonOhioPage() {
       {/* Hero */}
       <section className="bg-[#2C2C2C] pt-28 pb-16">
         <div className="container-wide">
-          <p className="text-[#E8F840] text-xs font-bold uppercase tracking-widest font-inter mb-3">
+          <p className="text-[#FF6B00] text-xs font-bold uppercase tracking-widest font-inter mb-3">
             Free Harrison OH Home Valuation
           </p>
           <h1 className="font-playfair text-4xl md:text-5xl font-bold text-white max-w-3xl leading-tight">
             What Is My Home Worth in Harrison Ohio?
           </h1>
           <p className="text-white/70 font-inter mt-4 max-w-2xl text-lg">
-            Zillow cannot tell you what your Harrison home is worth. A local broker with 24
+            Zillow cannot tell you what your Harrison home is worth. A local real estate agent with 24
             years in this market can. Get a real number based on actual sold data, not an
             algorithm.
           </p>

@@ -39,7 +39,7 @@ export default function TestimonialsCarousel({
             {Array.from({ length: t.starRating }).map((_, i) => (
               <Star
                 key={i}
-                className="w-5 h-5 text-[#1A1A1A] fill-[#E8F840]"
+                className="w-5 h-5 text-[#1A1A1A] fill-[#FF6B00]"
               />
             ))}
           </div>

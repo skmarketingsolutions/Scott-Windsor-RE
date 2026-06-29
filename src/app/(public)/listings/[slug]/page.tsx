@@ -5,6 +5,7 @@ import Image from "next/image";
 import Link from "next/link";
 import PublicLayout from "@/components/layout/PublicLayout";
 import { prisma } from "@/lib/prisma";
+import { getLoftyListingBySlug } from "@/lib/lofty";
 import { formatPrice, parsePhotos } from "@/lib/utils";
 import LeadForm from "@/components/ui/LeadForm";
 import MortgageCalculator from "@/components/ui/MortgageCalculator";
@@ -15,8 +16,14 @@ interface Props {
   params: { slug: string };
 }
 
+async function getListing(slug: string) {
+  const db = await prisma.listing.findUnique({ where: { slug } });
+  if (db) return db;
+  return getLoftyListingBySlug(slug);
+}
+
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
-  const listing = await prisma.listing.findUnique({ where: { slug: params.slug } });
+  const listing = await getListing(params.slug);
   if (!listing) return {};
 
   return {
@@ -30,14 +37,19 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 }
 
 export default async function ListingDetailPage({ params }: Props) {
-  const listing = await prisma.listing.findUnique({
+  // Try DB first (includes open houses), then fall back to Lofty API
+  const dbListing = await prisma.listing.findUnique({
     where: { slug: params.slug },
     include: { openHouses: { where: { cancelled: false } } },
   });
 
+  const listing = dbListing ?? await getLoftyListingBySlug(params.slug);
+
   if (!listing) notFound();
 
   const photos = parsePhotos(listing.photos);
+  // openHouses only exists on DB listings; Lofty listings won't have it
+  const openHouses = (listing as any).openHouses ?? [];
   const related = await prisma.listing.findMany({
     where: {
       city: listing.city,
@@ -315,7 +327,7 @@ export default async function ListingDetailPage({ params }: Props) {
                     <div>
                       <p className="font-playfair font-bold text-navy">Scott Windsor</p>
                       <p className="text-xs text-gray-500 font-inter">
-                        Broker/Owner | Align Right Realty Infinity
+                        Real Estate Agent | Align Right Realty Infinity
                       </p>
                     </div>
                   </div>

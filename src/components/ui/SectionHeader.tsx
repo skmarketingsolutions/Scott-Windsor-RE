@@ -34,7 +34,7 @@ export default function SectionHeader({
       {label && (
         <p className={cn(
           "label-gold mb-3",
-          dark && "text-[#E8F840]"
+          dark && "text-[#FF6B00]"
         )}>
           {label}
         </p>

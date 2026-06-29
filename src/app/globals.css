@@ -6,8 +6,8 @@
   --background: #ffffff;
   --foreground: #1A1A1A;
   --navy: #2C2C2C;
-  --gold: #E8F840;
-  --gold-light: #F2FF60;
+  --gold: #FF6B00;
+  --gold-light: #FF8C33;
   --charcoal: #2C2C2C;
   --offwhite: #F5F5F5;
   --body-text: #555555;
@@ -97,7 +97,7 @@
   .sold-badge {
     @apply absolute top-4 left-4 text-xs font-bold uppercase tracking-wider px-3 py-1.5 animate-pulse-slow;
     background-color: #0A1628;
-    color: #E8F840;
+    color: #FF6B00;
   }
 
   .status-badge {
@@ -158,7 +158,7 @@
   }
 
   .gold-gradient {
-    background: linear-gradient(135deg, #E8F840 0%, #F2FF60 100%);
+    background: linear-gradient(135deg, #FF6B00 0%, #FF8C33 100%);
   }
 
   .navy-gradient {

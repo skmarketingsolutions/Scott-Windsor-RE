@@ -4,8 +4,8 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "node scripts/migrate.mjs && next build",
-    "start": "next start",
+    "build": "node scripts/migrate.mjs && next build && node scripts/copy-standalone.mjs",
+    "start": "node .next/standalone/server.js",
     "lint": "next lint",
     "db:migrate": "npx prisma migrate dev",
     "db:seed": "npx tsx prisma/seed.ts",

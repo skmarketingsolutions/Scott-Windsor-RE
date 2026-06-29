@@ -18,22 +18,22 @@ import FinalCTA from "@/components/home/FinalCTA";
 import { prisma } from "@/lib/prisma";
 
 export const metadata: Metadata = {
-  title: "Harrison Ohio Real Estate Agent | Scott Windsor | Align Right Realty Infinity",
+  title: "Real Estate Agent Cincinnati | Homes for Sale in Harrison Ohio",
   description:
-    "Scott Windsor — retired Harrison firefighter of 24 years, multi-million dollar producing real estate broker/owner. Helping families buy and sell homes in Harrison, Ohio and Southwest Ohio.",
+    "Work with a trusted real estate agent Cincinnati residents rely on. Explore homes for sale in Harrison Ohio with Align Right Realty Infinity.",
   keywords: [
+    "cincinnati real estate agent",
+    "greater cincinnati realtor",
     "harrison ohio real estate agent",
     "harrison ohio homes for sale",
-    "harrison oh realtor",
-    "homes for sale harrison oh 45030",
-    "real estate broker harrison ohio",
-    "sell my home harrison ohio",
-    "best real estate agent harrison ohio",
+    "tri state real estate agent",
+    "cincinnati homes for sale",
+    "northern kentucky real estate agent",
     "align right realty infinity harrison ohio",
   ],
   openGraph: {
-    title: "Harrison Ohio Real Estate | Scott Windsor",
-    description: "24 years protecting Harrison. Now helping families buy and sell in it.",
+    title: "Greater Cincinnati Real Estate | Scott Windsor",
+    description: "24 years protecting Harrison. Now helping buyers and sellers across Greater Cincinnati.",
     url: "/",
   },
 };
@@ -46,7 +46,7 @@ const schemaMarkup = {
       "@id": "https://scottwindsor.com/#agent",
       name: "Scott Windsor",
       description:
-        "Scott Windsor is a retired Harrison firefighter of 24 years and multi-million dollar producing real estate broker at Align Right Realty Infinity. Specializing in Harrison Ohio homes for sale, new construction in Parks of Whitewater and Trailhead, and Southwest Ohio real estate.",
+        "Scott Windsor is a retired Harrison firefighter of 24 years and multi-million dollar producing real estate agent at Align Right Realty Infinity. Specializing in Harrison Ohio homes for sale, new construction in Parks of Whitewater and Trailhead, and Southwest Ohio real estate.",
       telephone: "513-307-6449",
       email: "windsorinfinity@gmail.com",
       address: {
@@ -58,16 +58,17 @@ const schemaMarkup = {
       },
       areaServed: [
         "Harrison, OH",
-        "Cleves, OH",
-        "North Bend, OH",
-        "New Baltimore, OH",
-        "Whitewater Township, OH",
+        "Greater Cincinnati, OH",
         "Hamilton County, OH",
         "Butler County, OH",
+        "Warren County, OH",
+        "Cleves, OH",
+        "North Bend, OH",
+        "Okeana, OH",
         "Anderson Township, OH",
-        "Sharonville, OH",
         "West Harrison, OH",
-        "Southwest Ohio",
+        "Warren County, OH",
+        "Greater Cincinnati Metro",
       ],
       worksFor: {
         "@type": "Organization",
@@ -87,7 +88,7 @@ const schemaMarkup = {
         postalCode: "45030",
       },
       priceRange: "$149,900 to $625,000",
-      description: "Scott Windsor is a retired Harrison firefighter of 24 years and multi-million dollar producing real estate broker at Align Right Realty Infinity. Specializing in Harrison Ohio homes for sale, new construction in Parks of Whitewater and Trailhead, and Southwest Ohio real estate.",
+      description: "Scott Windsor is a retired Harrison firefighter of 24 years and multi-million dollar producing real estate agent at Align Right Realty Infinity. Specializing in Harrison Ohio homes for sale, new construction in Parks of Whitewater and Trailhead, and Southwest Ohio real estate.",
       geo: {
         "@type": "GeoCoordinates",
         latitude: 39.2598,
@@ -102,7 +103,7 @@ const schemaMarkup = {
           name: "Who is the best real estate agent in Harrison Ohio?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "Scott Windsor at Align Right Realty Infinity is a local broker with 24 years serving the Harrison community, first as a firefighter and now as a multi-million dollar producing real estate broker. Call 513-307-6449.",
+            text: "Scott Windsor at Align Right Realty Infinity is a local real estate agent with 24 years serving the Harrison community, first as a firefighter and now as a multi-million dollar producing real estate agent. Call 513-307-6449.",
           },
         },
         {

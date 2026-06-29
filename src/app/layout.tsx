@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter, Playfair_Display } from "next/font/google";
 import "./globals.css";
 import { GTMScript, GTMNoScript } from "@/components/GTM";
+import GoogleAnalytics from "@/components/GoogleAnalytics";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -26,13 +27,13 @@ export const metadata: Metadata = {
     template: "%s | Scott Windsor Realtor Harrison OH",
   },
   description:
-    "Scott Windsor — retired Harrison firefighter of 24 years, multi-million dollar real estate broker/owner in Harrison, Ohio. Serving Harrison, Cleves, North Bend, New Baltimore, and Southwest Ohio.",
+    "Scott Windsor — retired Harrison firefighter of 24 years, multi-million dollar real estate agent. Based in Harrison, OH. Serving Greater Cincinnati and Southwest Ohio.",
   keywords: [
     "harrison ohio real estate agent",
     "harrison ohio homes for sale",
     "harrison oh realtor",
     "homes for sale harrison oh 45030",
-    "real estate broker harrison ohio",
+    "real estate agent harrison ohio",
     "sell my home harrison ohio",
   ],
   openGraph: {
@@ -47,6 +48,9 @@ export const metadata: Metadata = {
     index: true,
     follow: true,
   },
+  verification: {
+    google: "HcB0tok9rjmI_dnp064HV2OOxoV5kbnQxgNQwMtv6vo",
+  },
 };
 
 export default function RootLayout({
@@ -58,6 +62,7 @@ export default function RootLayout({
     <html lang="en" className={`${inter.variable} ${playfair.variable}`}>
       <head>
         <GTMScript />
+        <GoogleAnalytics />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link
           rel="preconnect"

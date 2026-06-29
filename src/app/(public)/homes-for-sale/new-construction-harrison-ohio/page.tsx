@@ -4,9 +4,9 @@ import PublicLayout from "@/components/layout/PublicLayout";
 import LeadForm from "@/components/ui/LeadForm";
 
 export const metadata: Metadata = {
-  title: "New Construction Homes Harrison Ohio 2026 | Scott Windsor",
+  title: "Harrison Ohio New Construction Homes | Ryan & Drees Homes",
   description:
-    "Explore new construction homes in Harrison Ohio from Ryan Homes, Drees Homes and M/I Homes. Scott Windsor helps buyers navigate new builds at no extra cost.",
+    "Explore new construction in Harrison OH with Scott Windsor. Ryan Homes & Drees Homes available. A buyer's agent costs nothing — call Scott today.",
 };
 
 const faqSchema = {
@@ -59,7 +59,7 @@ export default function NewConstructionHarrisonOhio() {
       {/* Hero */}
       <section className="bg-[#2C2C2C] pt-28 pb-16">
         <div className="container-wide">
-          <p className="text-[#E8F840] text-xs font-bold uppercase tracking-widest font-inter mb-3">
+          <p className="text-[#FF6B00] text-xs font-bold uppercase tracking-widest font-inter mb-3">
             New Homes Harrison OH 2026
           </p>
           <h1 className="font-playfair text-4xl md:text-5xl font-bold text-white max-w-3xl leading-tight">

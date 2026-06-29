@@ -4,9 +4,9 @@ import PublicLayout from "@/components/layout/PublicLayout";
 import LeadForm from "@/components/ui/LeadForm";
 
 export const metadata: Metadata = {
-  title: "Whitewater Township Homes | Scott Windsor Realtor",
+  title: "Parks of Whitewater Homes for Sale | Harrison OH Realtor",
   description:
-    "Find homes for sale in Whitewater Township Ohio. Acreage properties and suburban homes near Harrison OH. Scott Windsor, local broker.",
+    "Explore Parks of Whitewater homes for sale in Harrison, OH. Discover neighborhood amenities, nearby schools, community features, and available real estate listings.",
 };
 
 const faqSchema = {
@@ -51,7 +51,7 @@ export default function WhitewaterTownshipOhio() {
       {/* Hero */}
       <section className="bg-[#2C2C2C] pt-28 pb-16">
         <div className="container-wide">
-          <p className="text-[#E8F840] text-xs font-bold uppercase tracking-widest font-inter mb-3">
+          <p className="text-[#FF6B00] text-xs font-bold uppercase tracking-widest font-inter mb-3">
             Whitewater Township OH Real Estate
           </p>
           <h1 className="font-playfair text-4xl md:text-5xl font-bold text-white max-w-3xl leading-tight">

@@ -41,7 +41,7 @@ export default function SchoolsPage() {
 
       <div className="bg-navy pt-28 pb-16">
         <div className="container-wide">
-          <p className="text-[#E8F840] text-xs font-bold uppercase tracking-widest font-inter mb-3">Education</p>
+          <p className="text-[#FF6B00] text-xs font-bold uppercase tracking-widest font-inter mb-3">Education</p>
           <h1 className="font-playfair text-4xl md:text-5xl font-bold text-white mb-4">
             Harrison Ohio Schools &amp; School Districts
           </h1>
@@ -59,7 +59,7 @@ export default function SchoolsPage() {
                 <p className="label-gold mb-2">District Overview</p>
                 <h2 className="font-playfair text-3xl font-bold text-navy mb-4">Southwest Local School District</h2>
                 <p className="text-gray-600 font-inter leading-relaxed mb-4">
-                  Homes in Harrison, Cleves, North Bend, New Baltimore, and Whitewater Township are served by the <strong>Southwest Local School District</strong>, a community-focused public school district known for smaller class sizes and strong family involvement.
+                  Homes in Harrison, Cleves, North Bend, and Whitewater Township are served by the <strong>Southwest Local School District</strong>, a community-focused public school district known for smaller class sizes and strong family involvement.
                 </p>
                 <p className="text-gray-600 font-inter leading-relaxed">
                   Families relocating from Cincinnati consistently choose Southwest Local as a primary reason for settling in Harrison. The district offers a more personalized education experience than many larger Hamilton County districts, while still providing competitive academics and extracurriculars.

@@ -6,7 +6,7 @@ import LeadForm from "@/components/ui/LeadForm";
 export const metadata: Metadata = {
   title: "Harrison Ohio Housing Market 2026 | Scott Windsor",
   description:
-    "Current Harrison Ohio real estate market stats for 2026. Home prices, days on market, inventory levels, and expert analysis from Scott Windsor.",
+    "Get 2026 Harrison OH market stats from Scott Windsor — home prices, days on market, inventory levels & expert real estate analysis. Stay informed.",
 };
 
 const faqSchema = {
@@ -51,7 +51,7 @@ export default function HarrisonOhioRealEstateMarketPage() {
       {/* Hero */}
       <section className="bg-[#2C2C2C] pt-28 pb-16">
         <div className="container-wide">
-          <p className="text-[#E8F840] text-xs font-bold uppercase tracking-widest font-inter mb-3">
+          <p className="text-[#FF6B00] text-xs font-bold uppercase tracking-widest font-inter mb-3">
             Harrison OH Market Report
           </p>
           <h1 className="font-playfair text-4xl md:text-5xl font-bold text-white max-w-3xl leading-tight">
@@ -81,7 +81,7 @@ export default function HarrisonOhioRealEstateMarketPage() {
           </h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-8">
             <div className="bg-[#F5F5F5] rounded-lg p-6">
-              <p className="text-[#E8F840] text-xs font-bold uppercase tracking-widest font-inter mb-1" style={{color: "#1A1A1A"}}>Median Home Price</p>
+              <p className="text-[#FF6B00] text-xs font-bold uppercase tracking-widest font-inter mb-1" style={{color: "#1A1A1A"}}>Median Home Price</p>
               <p className="font-playfair text-2xl font-bold text-[#1A1A1A]">$277,859 &ndash; $384,950</p>
               <p className="text-[#555555] text-sm font-inter mt-1">Depending on type and condition</p>
             </div>

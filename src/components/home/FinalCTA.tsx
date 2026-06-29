@@ -18,7 +18,7 @@ export default function FinalCTA() {
             Ready When You Are
           </p>
           <h2 className="font-playfair text-4xl md:text-5xl font-bold text-white mb-6">
-            Ready to Make Your Move in Harrison?
+            Ready to Make Your Move in Greater Cincinnati?
           </h2>
           <p className="text-white/70 text-lg max-w-xl mx-auto mb-10 font-inter">
             Whether you&apos;re buying your first home or selling to start your next
@@ -27,7 +27,7 @@ export default function FinalCTA() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
               href="/contact"
-              className="inline-flex items-center justify-center px-8 py-4 bg-[#E8F840] text-[#1A1A1A] font-bold text-sm uppercase tracking-widest hover:bg-[#F2FF60] transition-all font-inter"
+              className="inline-flex items-center justify-center px-8 py-4 bg-[#FF6B00] text-[#1A1A1A] font-bold text-sm uppercase tracking-widest hover:bg-[#FF8C33] transition-all font-inter"
             >
               Let&apos;s Talk
             </Link>

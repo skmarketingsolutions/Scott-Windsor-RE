@@ -77,13 +77,13 @@ export async function sendLeadEmail(payload: LeadPayload): Promise<boolean> {
   const htmlBody = `
     <div style="font-family:Arial,sans-serif;max-width:560px;margin:0 auto">
       <div style="background:#2C2C2C;padding:18px 24px">
-        <p style="color:#E8F840;margin:0;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:1.5px">New Lead</p>
+        <p style="color:#FF6B00;margin:0;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:1.5px">New Lead</p>
         <h2 style="color:#fff;margin:4px 0 0;font-size:18px">${payload.firstName} ${payload.lastName || ""}</h2>
       </div>
       <table style="width:100%;background:#fff;border:1px solid #eee;border-top:none">${tableRows}</table>
       <div style="padding:16px 24px;background:#F5F5F5;border:1px solid #eee;border-top:none;text-align:center">
         <a href="${siteUrl}/admin/leads"
-           style="background:#E8F840;color:#2C2C2C;padding:10px 24px;text-decoration:none;font-weight:700;font-size:13px;display:inline-block">
+           style="background:#FF6B00;color:#2C2C2C;padding:10px 24px;text-decoration:none;font-weight:700;font-size:13px;display:inline-block">
           View in Admin Panel →
         </a>
       </div>

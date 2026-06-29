@@ -192,7 +192,7 @@ const blogPosts = [
     status: "Published",
     publishedAt: new Date("2025-03-20"),
     metaTitle: "How to Sell Your Home in Harrison Ohio for Top Dollar | Scott Windsor",
-    metaDescription: "Proven strategies for selling your Harrison Ohio home quickly and at the best price. From pricing strategy to marketing — expert advice from a local broker with 24 years in Harrison.",
+    metaDescription: "Proven strategies for selling your Harrison Ohio home quickly and at the best price. From pricing strategy to marketing — expert advice from a local real estate agent with 24 years in Harrison.",
     keywords: "sell my home harrison ohio, how to sell house harrison ohio, listing agent harrison ohio, home selling tips harrison ohio, sell home fast harrison oh 45030",
     heroImage: "https://images.unsplash.com/photo-1582268611958-ebfd161ef9cf?w=1200&q=80",
     body: `<p>Every seller wants the same thing: the most money, in the least time, with the fewest headaches. That's a reasonable goal, and it's achievable — but it requires making the right decisions from the start, not fixing mistakes after you've already been on the market for 45 days with a price reduction.</p>

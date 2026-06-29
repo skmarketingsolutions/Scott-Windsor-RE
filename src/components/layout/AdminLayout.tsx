@@ -35,7 +35,7 @@ export default function AdminLayout({ children }: { children: React.ReactNode })
       <div className="p-6 border-b border-white/10">
         <Link href="/admin" className="block">
           <p className="font-playfair font-bold text-white text-lg">Scott Windsor</p>
-          <p className="text-[#E8F840] text-xs uppercase tracking-widest font-inter font-semibold mt-0.5">
+          <p className="text-[#FF6B00] text-xs uppercase tracking-widest font-inter font-semibold mt-0.5">
             Admin Dashboard
           </p>
         </Link>
@@ -50,7 +50,7 @@ export default function AdminLayout({ children }: { children: React.ReactNode })
             className={cn(
               "flex items-center gap-3 px-3 py-2.5 text-sm font-inter font-medium transition-colors",
               isActive(item)
-                ? "bg-[#E8F840] text-[#1A1A1A]"
+                ? "bg-[#FF6B00] text-[#1A1A1A]"
                 : "text-white/70 hover:text-white hover:bg-white/10"
             )}
           >

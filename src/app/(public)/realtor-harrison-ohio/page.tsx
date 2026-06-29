@@ -4,9 +4,9 @@ import PublicLayout from "@/components/layout/PublicLayout";
 import LeadForm from "@/components/ui/LeadForm";
 
 export const metadata: Metadata = {
-  title: "Realtor Harrison Ohio | Scott Windsor Align Right",
+  title: "Scott Windsor | Greater Cincinnati & Harrison OH Realtor",
   description:
-    "Looking for a trusted realtor in Harrison Ohio? Scott Windsor is a local broker with 24 years in the Harrison community. Call 513-307-6449 today.",
+    "Scott Windsor, retired Harrison firefighter of 24 years & top real estate agent serving Harrison, Greater Cincinnati & Southwest Ohio communities.",
 };
 
 const faqSchema = {
@@ -18,7 +18,7 @@ const faqSchema = {
       name: "Who is the best realtor in Harrison Ohio?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Scott Windsor is the broker/owner of Align Right Realty Infinity and one of the most knowledgeable real estate professionals in Harrison Ohio. He spent 24 years as a firefighter for the City of Harrison before transitioning to real estate full time. That background gives him a depth of local knowledge that most agents simply do not have. He has grown into a multi-million dollar producing agent serving Harrison and Southwest Ohio.",
+        text: "Scott Windsor is the real estate agent of Align Right Realty Infinity and one of the most knowledgeable real estate professionals in Harrison Ohio. He spent 24 years as a firefighter for the City of Harrison before transitioning to real estate full time. That background gives him a depth of local knowledge that most agents simply do not have. He has grown into a multi-million dollar producing agent serving Harrison and Southwest Ohio.",
       },
     },
     {
@@ -34,7 +34,7 @@ const faqSchema = {
       name: "What does Scott Windsor specialize in?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Scott Windsor specializes in buyer representation, seller listing and marketing, new construction buyer representation, and relocation assistance for buyers moving to Harrison Ohio from outside the area. He serves Harrison OH, Cleves OH, North Bend OH, New Baltimore OH, Whitewater Township OH, Anderson Township OH, Sharonville OH, and broader Hamilton County and Butler County markets.",
+        text: "Scott Windsor specializes in buyer representation, seller listing and marketing, new construction buyer representation, and relocation assistance for buyers moving to Harrison Ohio from outside the area. He serves Harrison OH, Cleves OH, North Bend OH, Okeana OH, Whitewater Township OH, Anderson Township OH, Sharonville OH, and broader Hamilton County and Butler County markets.",
       },
     },
     {
@@ -42,7 +42,7 @@ const faqSchema = {
       name: "How long has Scott Windsor been a realtor in Harrison Ohio?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Scott Windsor has been deeply rooted in the Harrison Ohio community for over 24 years as a firefighter with the Harrison Fire Department before moving into real estate full time as broker/owner of Align Right Realty Infinity. His real estate career has grown into a multi-million dollar producing practice serving Harrison and Southwest Ohio.",
+        text: "Scott Windsor has been deeply rooted in the Harrison Ohio community for over 24 years as a firefighter with the Harrison Fire Department before moving into real estate full time as real estate agent of Align Right Realty Infinity. His real estate career has grown into a multi-million dollar producing practice serving Harrison and Southwest Ohio.",
       },
     },
   ],
@@ -58,7 +58,7 @@ export default function RealtorHarrisonOhioPage() {
 
       <section className="bg-[#2C2C2C] pt-28 pb-16">
         <div className="container-wide">
-          <p className="text-[#E8F840] text-xs font-bold uppercase tracking-widest font-inter mb-3">
+          <p className="text-[#FF6B00] text-xs font-bold uppercase tracking-widest font-inter mb-3">
             Your Harrison OH Real Estate Expert
           </p>
           <h1 className="font-playfair text-4xl md:text-5xl font-bold text-white max-w-3xl leading-tight">
@@ -84,10 +84,10 @@ export default function RealtorHarrisonOhioPage() {
           </p>
 
           <h2 className="font-playfair text-2xl font-bold text-[#1A1A1A] mb-4 mt-10">
-            Broker/Owner of Align Right Realty Infinity
+            Real Estate Agent of Align Right Realty Infinity
           </h2>
           <p className="text-[#555555] leading-relaxed mb-4 font-inter">
-            Scott is the broker and owner of Align Right Realty Infinity. He has grown the practice into a multi-million dollar producing real estate business serving Harrison, Southwest Ohio, and surrounding communities. As a broker/owner rather than a typical agent, he has the licensing, experience, and accountability that comes with running his own firm.
+            Scott is the broker and owner of Align Right Realty Infinity. He has grown the practice into a multi-million dollar producing real estate business serving Harrison, Southwest Ohio, and surrounding communities. As a real estate agent rather than a typical agent, he has the licensing, experience, and accountability that comes with running his own firm.
           </p>
           <p className="text-[#555555] leading-relaxed mb-4 font-inter">
             That distinction matters to buyers and sellers. You are working directly with the principal of the firm, not an agent who passes your file up the chain when things get complicated. Scott handles your transaction personally.
@@ -118,7 +118,7 @@ export default function RealtorHarrisonOhioPage() {
             <li>Harrison OH (45030)</li>
             <li>Cleves OH</li>
             <li>North Bend OH</li>
-            <li>New Baltimore OH</li>
+            <li>Okeana OH</li>
             <li>Whitewater Township OH</li>
             <li>Anderson Township OH</li>
             <li>Sharonville OH</li>
@@ -174,7 +174,7 @@ export default function RealtorHarrisonOhioPage() {
                 Who is the best realtor in Harrison Ohio?
               </h3>
               <p className="text-[#555555] font-inter">
-                Scott Windsor is the broker/owner of Align Right Realty Infinity. He spent 24 years as a firefighter in Harrison before transitioning to real estate full time, making him one of the most knowledgeable real estate professionals in the area. He has grown into a multi-million dollar producing agent serving Harrison and Southwest Ohio.
+                Scott Windsor is the real estate agent of Align Right Realty Infinity. He spent 24 years as a firefighter in Harrison before transitioning to real estate full time, making him one of the most knowledgeable real estate professionals in the area. He has grown into a multi-million dollar producing agent serving Harrison and Southwest Ohio.
               </p>
             </div>
             <div>
@@ -198,7 +198,7 @@ export default function RealtorHarrisonOhioPage() {
                 How long has Scott Windsor been a realtor in Harrison Ohio?
               </h3>
               <p className="text-[#555555] font-inter">
-                Scott has been rooted in the Harrison community for over 24 years as a firefighter before moving into real estate full time as broker/owner of Align Right Realty Infinity. His real estate practice has grown into a multi-million dollar producing business serving Harrison and Southwest Ohio.
+                Scott has been rooted in the Harrison community for over 24 years as a firefighter before moving into real estate full time as real estate agent of Align Right Realty Infinity. His real estate practice has grown into a multi-million dollar producing business serving Harrison and Southwest Ohio.
               </p>
             </div>
           </div>

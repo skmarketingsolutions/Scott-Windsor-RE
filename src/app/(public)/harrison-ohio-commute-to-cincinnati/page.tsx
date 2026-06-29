@@ -3,9 +3,9 @@ import PublicLayout from "@/components/layout/PublicLayout";
 import LeadForm from "@/components/ui/LeadForm";
 
 export const metadata: Metadata = {
-  title: "Harrison Ohio to Cincinnati Commute | Scott Windsor",
+  title: "Harrison OH to Cincinnati Commute | Scott Windsor",
   description:
-    "How far is Harrison Ohio from Cincinnati? Complete commute guide for Harrison OH residents and buyers. I-74, I-275, routes and times from Scott Windsor.",
+    "How far is Harrison OH from Cincinnati? Complete commute guide covering I-74, I-275, routes & drive times for residents & buyers from Scott Windsor.",
 };
 
 const faqSchema = {
@@ -57,7 +57,7 @@ export default function HarrisonOhioCommutePage() {
 
       <section className="bg-[#2C2C2C] pt-28 pb-16">
         <div className="container-wide">
-          <p className="text-[#E8F840] text-xs font-bold uppercase tracking-widest font-inter mb-3">
+          <p className="text-[#FF6B00] text-xs font-bold uppercase tracking-widest font-inter mb-3">
             Harrison OH Commute Guide
           </p>
           <h1 className="font-playfair text-4xl md:text-5xl font-bold text-white max-w-3xl leading-tight">

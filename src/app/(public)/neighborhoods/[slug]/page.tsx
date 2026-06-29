@@ -41,7 +41,7 @@ const neighborhoods: Record<string, {
     features: ["Drees & Ryan Homes options", "Connected trail system", "Customization options available", "Multiple price points", "New construction warranty", "Close to Harrison DORA", "Southwest Local Schools", "Strong resale value"],
     schools: "Southwest Local School District (K–12)",
     nearby: ["Whitewater Greenway Trail Access", "Harrison DORA District (3 min)", "Miami Whitewater Forest (10 min)", "I-74 interchange (5 min)", "Cincinnati (30 min)"],
-    relatedSlugs: ["parks-of-whitewater", "the-district", "new-baltimore"],
+    relatedSlugs: ["parks-of-whitewater", "the-district", "okeana"],
   },
   "the-district": {
     name: "The District (DORA)",
@@ -89,22 +89,22 @@ const neighborhoods: Record<string, {
     features: ["Ohio River views available", "Historic & unique architecture", "Large lots on the bluffs", "Quiet, established community", "Swimming and boating access", "Southwest Local Schools", "Low traffic, rural feel", "Strong neighborhood identity"],
     schools: "Southwest Local School District (K–12)",
     nearby: ["Ohio River (walking distance)", "Cleves (10 min)", "Harrison (15 min)", "Cincinnati (25 min)", "William Henry Harrison Tomb (5 min)"],
-    relatedSlugs: ["cleves", "new-baltimore", "whitewater-township"],
+    relatedSlugs: ["cleves", "okeana", "whitewater-township"],
   },
-  "new-baltimore": {
-    name: "New Baltimore",
-    tagline: "Rural Acreage and Estate Properties in Hamilton County",
-    type: "Rural / Suburban",
-    priceRange: "From $200s to $600s+",
+  "okeana": {
+    name: "Okeana",
+    tagline: "Country Estates and Rural Properties in Butler County, OH",
+    type: "Rural / Estate",
+    priceRange: "From $300s to $700s+",
     photo: "/images/neighborhoods/new-baltimore.jpg",
     description: [
-      "New Baltimore attracts buyers who want land: rural lots of one to ten acres or more, hobby farms, and estate-size properties within Southwest Ohio's commute range of Cincinnati.",
-      "The area has a quiet, agricultural character while still sitting within Southwest Local School District boundaries. Properties here offer the privacy and space that's simply unavailable in established subdivisions, at prices that still make sense.",
-      "For buyers moving from Cincinnati who want a true lifestyle change without sacrificing everything, New Baltimore is one of the best values in Hamilton County.",
+      "Okeana is a small Butler County community that offers some of the most distinctive rural estate properties in Southwest Ohio — large acreage parcels, scenic farmland, and genuine country living within reasonable distance of Cincinnati.",
+      "Scott Windsor has direct experience selling in Okeana, including a $670,000 sale on Hamilton Scipio Road — proof that the market here can deliver serious value for sellers and buyers alike. Properties range from established country homes to working farms with outbuildings.",
+      "For buyers who want privacy, space, and the feel of rural Ohio without sacrificing access to the city, Okeana delivers. It's about 35–40 minutes from downtown Cincinnati and sits within a short drive of Harrison and the I-74 corridor.",
     ],
-    features: ["Rural lot and acreage options", "Hobby farm potential", "Estate-size properties", "Privacy and low traffic", "Southwest Local Schools", "Custom home opportunities", "Horse properties available", "25–35 min to Cincinnati"],
-    schools: "Southwest Local School District (K–12)",
-    nearby: ["Harrison (10 min)", "Whitewater Memorial State Park", "I-74 (12 min)", "Cincinnati (30 min)", "Oxford, OH (20 min)"],
+    features: ["Large acreage parcels", "Estate and country home opportunities", "Scenic Butler County farmland", "Privacy and low traffic", "Custom home potential", "Horse and livestock friendly", "Near Harrison & I-74", "35–40 min to Cincinnati"],
+    schools: "Ross Local School District / Edgewood City Schools (varies by location)",
+    nearby: ["Harrison, OH (15 min)", "Oxford, OH (20 min)", "I-74 interchange (20 min)", "Cincinnati (38 min)", "Hamilton, OH (25 min)"],
     relatedSlugs: ["whitewater-township", "north-bend", "trailhead"],
   },
   "whitewater-township": {
@@ -120,19 +120,47 @@ const neighborhoods: Record<string, {
     ],
     features: ["Largest lots in the area", "Agricultural and rural properties", "No HOA (most areas)", "Horse and livestock allowed", "Custom home sites available", "Southwest Local Schools", "Near Whitewater Memorial State Park", "Low property taxes"],
     schools: "Southwest Local School District (K–12)",
-    nearby: ["Harrison (8 min)", "Whitewater Memorial State Park", "New Baltimore (10 min)", "Indiana border (15 min)", "Cincinnati (35 min)"],
-    relatedSlugs: ["new-baltimore", "north-bend", "parks-of-whitewater"],
+    nearby: ["Harrison (8 min)", "Whitewater Memorial State Park", "Okeana (15 min)", "Indiana border (15 min)", "Cincinnati (35 min)"],
+    relatedSlugs: ["okeana", "north-bend", "parks-of-whitewater"],
   },
 };
 
 interface Props { params: { slug: string }; }
 
+const neighborhoodMeta: Record<string, { title: string; description: string }> = {
+  "parks-of-whitewater": {
+    title: "Parks of Whitewater Homes for Sale | Harrison OH Realtor",
+    description: "Explore Parks of Whitewater homes for sale in Harrison, OH. Discover neighborhood amenities, nearby schools, community features, and available real estate listings.",
+  },
+  "trailhead": {
+    title: "Trailhead Homes for Sale Harrison OH | Scott Windsor",
+    description: "Explore Trailhead homes for sale in Harrison, OH. Discover community amenities, nearby trails, local schools, and available real estate listings.",
+  },
+  "the-district": {
+    title: "The District Homes for Sale Harrison OH | Scott Windsor",
+    description: "Find homes for sale in The District, Harrison OH with walkable downtown living, local dining, community events, and nearby amenities.",
+  },
+  "cleves": {
+    title: "Cleves OH Homes for Sale | Scott Windsor Realtor",
+    description: "Find homes for sale in Cleves, OH with local market insights, nearby amenities, community highlights, and available real estate listings.",
+  },
+  "north-bend": {
+    title: "North Bend OH Homes for Sale | Scott Windsor Realtor",
+    description: "Find homes for sale in North Bend, OH with scenic river views, local amenities, community highlights, and available real estate listings.",
+  },
+  "okeana": {
+    title: "Okeana OH Homes for Sale | Scott Windsor Realtor",
+    description: "Find homes for sale in Okeana, OH with rural charm, spacious properties, local amenities, and updated real estate listings available today.",
+  },
+};
+
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const n = neighborhoods[params.slug];
   if (!n) return {};
+  const custom = neighborhoodMeta[params.slug];
   return {
-    title: `${n.name} Homes for Sale — Harrison Ohio | Scott Windsor`,
-    description: `${n.name} real estate in Harrison Ohio. ${n.tagline}. ${n.priceRange}. Contact Scott Windsor — local broker with 24 years in this market.`,
+    title: custom?.title ?? `${n.name} Homes for Sale — Harrison Ohio | Scott Windsor`,
+    description: custom?.description ?? `${n.name} real estate in Harrison Ohio. ${n.tagline}. ${n.priceRange}. Contact Scott Windsor — local real estate agent with 24 years in this market.`,
     keywords: [`${n.name.toLowerCase()} harrison ohio homes`, `${n.name.toLowerCase()} real estate`, `homes for sale ${n.name.toLowerCase()} ohio`],
   };
 }
@@ -182,7 +210,7 @@ export default function NeighborhoodPage({ params }: Props) {
         <div className="relative container-wide pb-12 md:pb-16 w-full">
           <div className="flex flex-col md:flex-row md:items-end justify-between gap-6">
             <div>
-              <span className="inline-block bg-[#E8F840] text-[#2C2C2C] text-xs font-bold uppercase tracking-widest px-3 py-1 font-inter mb-4">
+              <span className="inline-block bg-[#FF6B00] text-[#2C2C2C] text-xs font-bold uppercase tracking-widest px-3 py-1 font-inter mb-4">
                 {n.type}
               </span>
               <h1 className="font-playfair text-4xl md:text-6xl font-bold text-white mb-3 leading-tight">
@@ -192,13 +220,13 @@ export default function NeighborhoodPage({ params }: Props) {
                 {n.tagline}
               </p>
               <div className="mt-4 flex items-center gap-3">
-                <span className="font-playfair text-2xl font-bold text-[#E8F840]">{n.priceRange}</span>
+                <span className="font-playfair text-2xl font-bold text-[#FF6B00]">{n.priceRange}</span>
               </div>
             </div>
             <div className="flex-shrink-0">
               <a
                 href="tel:5133076449"
-                className="inline-flex items-center gap-2 bg-[#E8F840] text-[#2C2C2C] font-bold font-inter px-6 py-3 text-sm uppercase tracking-wider hover:bg-white transition-colors"
+                className="inline-flex items-center gap-2 bg-[#FF6B00] text-[#2C2C2C] font-bold font-inter px-6 py-3 text-sm uppercase tracking-wider hover:bg-white transition-colors"
               >
                 Call Scott · 513-307-6449
               </a>
@@ -217,7 +245,7 @@ export default function NeighborhoodPage({ params }: Props) {
 
               {/* Description */}
               <div>
-                <p className="text-[#E8F840] bg-[#2C2C2C] inline-block text-xs font-bold uppercase tracking-widest font-inter px-3 py-1 mb-4">About This Community</p>
+                <p className="text-[#FF6B00] bg-[#2C2C2C] inline-block text-xs font-bold uppercase tracking-widest font-inter px-3 py-1 mb-4">About This Community</p>
                 <div className="space-y-4">
                   {n.description.map((p, i) => (
                     <p key={i} className="text-gray-600 font-inter leading-relaxed text-base">{p}</p>
@@ -230,8 +258,8 @@ export default function NeighborhoodPage({ params }: Props) {
                 <h2 className="font-playfair text-2xl font-bold text-navy mb-5">Community Highlights</h2>
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
                   {n.features.map(f => (
-                    <div key={f} className="flex items-center gap-3 bg-[#F5F5F5] p-4 border-l-2 border-[#E8F840]">
-                      <CheckCircle className="w-4 h-4 text-[#E8F840] bg-[#2C2C2C] rounded-full flex-shrink-0" />
+                    <div key={f} className="flex items-center gap-3 bg-[#F5F5F5] p-4 border-l-2 border-[#FF6B00]">
+                      <CheckCircle className="w-4 h-4 text-[#FF6B00] bg-[#2C2C2C] rounded-full flex-shrink-0" />
                       <span className="text-sm text-gray-700 font-inter font-medium">{f}</span>
                     </div>
                   ))}
@@ -244,7 +272,7 @@ export default function NeighborhoodPage({ params }: Props) {
                 <p className="text-white/70 font-inter text-sm">{n.schools}</p>
                 <Link
                   href="/harrison-ohio-schools"
-                  className="flex items-center gap-1.5 text-[#E8F840] text-sm font-semibold font-inter mt-3 hover:gap-2.5 transition-all"
+                  className="flex items-center gap-1.5 text-[#FF6B00] text-sm font-semibold font-inter mt-3 hover:gap-2.5 transition-all"
                 >
                   View full school district info <ArrowRight className="w-3.5 h-3.5" />
                 </Link>
@@ -263,13 +291,22 @@ export default function NeighborhoodPage({ params }: Props) {
                 </div>
               </div>
 
-              {/* IDX Placeholder */}
-              <div>
-                <h2 className="font-playfair text-2xl font-bold text-navy mb-4">Homes for Sale in {n.name}</h2>
-                <div className="bg-[#F5F5F5] border-2 border-dashed border-gray-300 p-12 text-center">
-                  <p className="text-gray-400 font-inter text-sm">IDX listings for {n.name} will appear here once your IDX provider is configured.</p>
-                  <p className="text-gray-500 text-sm mt-2">Add <code className="text-navy bg-white px-1.5 py-0.5">NEXT_PUBLIC_IDX_SRC</code> to your .env file.</p>
-                </div>
+              {/* Homes CTA — form */}
+              <div className="bg-[#2C2C2C] p-8 md:p-10">
+                <p className="text-[#FF6B00] text-xs font-bold uppercase tracking-widest font-inter mb-2">Homes for Sale in {n.name}</p>
+                <h2 className="font-playfair text-2xl font-bold text-white mb-3">
+                  Want to See What&apos;s Available?
+                </h2>
+                <p className="text-white/60 font-inter text-sm leading-relaxed mb-6">
+                  Scott has access to every active listing in {n.name} — including off-market properties and new listings before they hit Zillow. Fill out the form and he&apos;ll send you a curated list of homes that match what you&apos;re looking for.
+                </p>
+                <LeadForm
+                  formType="neighborhood_homes"
+                  sourcePage={`/neighborhoods/${params.slug}`}
+                  showMessage
+                  ctaText={`Send Me Homes in ${n.name}`}
+                  dark
+                />
               </div>
             </div>
 
@@ -278,14 +315,14 @@ export default function NeighborhoodPage({ params }: Props) {
 
               {/* Lead form */}
               <div className="bg-[#2C2C2C] p-8">
-                <p className="text-[#E8F840] text-xs font-bold uppercase tracking-widest font-inter mb-2">Free Home Alerts</p>
+                <p className="text-[#FF6B00] text-xs font-bold uppercase tracking-widest font-inter mb-2">Free Home Alerts</p>
                 <h3 className="font-playfair text-xl font-bold text-white mb-2">Get Notified in {n.name}</h3>
                 <p className="text-white/60 text-sm font-inter mb-6">Scott will contact you the moment a matching home hits the market.</p>
                 <LeadForm formType="neighborhood_alert" sourcePage={`/neighborhoods/${params.slug}`} showMessage ctaText={`Get ${n.name} Alerts`} dark />
               </div>
 
               {/* Price range callout */}
-              <div className="bg-[#E8F840] p-6">
+              <div className="bg-[#FF6B00] p-6">
                 <p className="text-[#2C2C2C] text-xs font-bold uppercase tracking-widest font-inter mb-1">Price Range</p>
                 <p className="font-playfair text-2xl font-bold text-[#2C2C2C]">{n.priceRange}</p>
                 <p className="text-[#2C2C2C]/60 text-xs font-inter mt-1">Current market estimates · 2026</p>
@@ -309,7 +346,7 @@ export default function NeighborhoodPage({ params }: Props) {
                             <p className="font-semibold text-navy text-sm group-hover:text-white transition-colors font-inter">{related.name}</p>
                             <p className="text-gray-400 text-xs font-inter group-hover:text-white/50 transition-colors">{related.priceRange}</p>
                           </div>
-                          <ArrowRight className="w-4 h-4 text-gray-400 group-hover:text-[#E8F840] transition-colors flex-shrink-0" />
+                          <ArrowRight className="w-4 h-4 text-gray-400 group-hover:text-[#FF6B00] transition-colors flex-shrink-0" />
                         </Link>
                       );
                     })}
@@ -323,7 +360,7 @@ export default function NeighborhoodPage({ params }: Props) {
                 <p className="text-gray-500 text-sm font-inter mb-4">Scott knows every street in this community.</p>
                 <a
                   href="tel:5133076449"
-                  className="block w-full bg-navy text-[#E8F840] font-bold font-inter py-3 text-sm uppercase tracking-wider text-center hover:bg-[#2C2C2C] transition-colors"
+                  className="block w-full bg-navy text-[#FF6B00] font-bold font-inter py-3 text-sm uppercase tracking-wider text-center hover:bg-[#2C2C2C] transition-colors"
                 >
                   Call 513-307-6449
                 </a>

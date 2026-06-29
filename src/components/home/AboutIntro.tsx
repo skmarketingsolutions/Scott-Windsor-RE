@@ -21,7 +21,7 @@ export default function AboutIntro() {
             <div className="relative aspect-[4/5] bg-navy overflow-hidden">
               <Image
                 src="/images/scott-windsor-headshot.jpg"
-                alt="Scott Windsor - Harrison Ohio Real Estate Broker"
+                alt="Scott Windsor - Harrison Ohio Real Estate Agent"
                 fill
                 className="object-cover object-top"
                 sizes="(max-width: 1024px) 100vw, 50vw"
@@ -69,7 +69,7 @@ export default function AboutIntro() {
               From Fighting Fires to{" "}
               <span className="relative inline-block">
                 Finding Homes
-                <span className="absolute -bottom-1 left-0 right-0 h-0.5 bg-[#E8F840]" />
+                <span className="absolute -bottom-1 left-0 right-0 h-0.5 bg-[#FF6B00]" />
               </span>
             </h2>
 
@@ -82,18 +82,18 @@ export default function AboutIntro() {
             </p>
 
             <p className="text-gray-600 leading-relaxed mb-8 font-inter">
-              As the broker/owner of Align Right Realty Infinity, Scott has
-              become one of Southwest Ohio&apos;s most respected agents. His
-              approach isn&apos;t corporate or transactional — it&apos;s the same
-              hands-on, honest, community-first mindset that defined his 24
-              years in the firehouse.
+              As the Owner and Agent of Align Right Realty Infinity, Scott covers
+              the full Greater Cincinnati metro and Southwest Ohio. His approach
+              isn&apos;t corporate or transactional — it&apos;s the same hands-on, honest
+              mindset that defined his 24 years in the firehouse, applied across
+              the entire Cincinnati market.
             </p>
 
             <div className="flex flex-wrap gap-4 mb-8">
               {[
                 { icon: MapPin, text: "Harrison, OH Native" },
                 { icon: Shield, text: "Retired Firefighter" },
-                { icon: Award, text: "Broker/Owner" },
+                { icon: Award, text: "Owner & Agent" },
               ].map(({ icon: Icon, text }) => (
                 <div
                   key={text}

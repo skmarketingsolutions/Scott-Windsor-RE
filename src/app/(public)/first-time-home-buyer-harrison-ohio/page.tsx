@@ -4,9 +4,9 @@ import PublicLayout from "@/components/layout/PublicLayout";
 import LeadForm from "@/components/ui/LeadForm";
 
 export const metadata: Metadata = {
-  title: "First Time Home Buyer Harrison Ohio | Scott Windsor",
+  title: "First Time Home Buyer Harrison OH | Scott Windsor",
   description:
-    "Complete first time home buyer guide for Harrison Ohio. Learn the process, programs, and how Scott Windsor helps first time buyers in 45030.",
+    "Ready to buy your first home in Harrison OH 45030? Scott Windsor covers the full process, programs & tips for first time buyers. Get started today.",
 };
 
 const faqSchema = {
@@ -58,7 +58,7 @@ export default function FirstTimeHomeBuyerHarrisonOhioPage() {
 
       <section className="bg-[#2C2C2C] pt-28 pb-16">
         <div className="container-wide">
-          <p className="text-[#E8F840] text-xs font-bold uppercase tracking-widest font-inter mb-3">
+          <p className="text-[#FF6B00] text-xs font-bold uppercase tracking-widest font-inter mb-3">
             First Time Buyers Harrison OH
           </p>
           <h1 className="font-playfair text-4xl md:text-5xl font-bold text-white max-w-3xl leading-tight">

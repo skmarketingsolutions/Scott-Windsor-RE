@@ -4,9 +4,9 @@ import PublicLayout from "@/components/layout/PublicLayout";
 import LeadForm from "@/components/ui/LeadForm";
 
 export const metadata: Metadata = {
-  title: "Open Houses Harrison Ohio | Scott Windsor Realtor",
+  title: "Open Houses in Harrison, OH | Scott Windsor Realtor",
   description:
-    "Find upcoming open houses in Harrison Ohio. Get notified of new open houses in 45030 from Scott Windsor at Align Right Realty Infinity.",
+    "Browse upcoming open houses in Harrison, Cleves, North Bend & Southwest Ohio. Hosted by Scott Windsor — Align Right Realty Infinity. Visit today.",
 };
 
 const faqSchema = {
@@ -50,7 +50,7 @@ export default function HarrisonOhioOpenHousesPage() {
 
       <section className="bg-[#2C2C2C] pt-28 pb-16">
         <div className="container-wide">
-          <p className="text-[#E8F840] text-xs font-bold uppercase tracking-widest font-inter mb-3">
+          <p className="text-[#FF6B00] text-xs font-bold uppercase tracking-widest font-inter mb-3">
             Harrison OH Open Houses
           </p>
           <h1 className="font-playfair text-4xl md:text-5xl font-bold text-white max-w-3xl leading-tight">
@@ -65,7 +65,7 @@ export default function HarrisonOhioOpenHousesPage() {
             Attending open houses is one of the best ways to explore the Harrison Ohio market without commitment. You can walk through multiple homes in a single weekend, compare layouts and finishes, get a feel for different neighborhoods, and develop a clear sense of what your budget actually buys in this market. For buyers who are still early in the process, open houses are an invaluable step.
           </p>
 
-          <div className="bg-[#F5F5F5] border-l-4 border-[#E8F840] p-6 mb-8">
+          <div className="bg-[#F5F5F5] border-l-4 border-[#FF6B00] p-6 mb-8">
             <p className="text-[#1A1A1A] font-semibold font-inter mb-2">View Current Open Houses</p>
             <p className="text-[#555555] font-inter mb-4">
               Browse the latest scheduled open houses in Harrison Ohio and the 45030 zip code.

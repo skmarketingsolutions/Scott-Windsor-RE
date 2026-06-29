@@ -10,10 +10,10 @@ const config: Config = {
     extend: {
       colors: {
         navy: "#2C2C2C",
-        gold: "#E8F840",
+        gold: "#FF6B00",
         charcoal: "#2C2C2C",
         offwhite: "#F5F5F5",
-        "gold-light": "#F2FF60",
+        "gold-light": "#FF8C33",
         "navy-light": "#3C3C3C",
       },
       fontFamily: {

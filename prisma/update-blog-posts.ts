@@ -19,8 +19,8 @@ async function main() {
   const appendPost1 = `
 <h2>Harrison Ohio Market Stats You Need to Know in 2026</h2>
 <p>Homes in Harrison Ohio are currently selling at 98.4% of asking price. The average days on market is 43 days. April is peak selling season. The median home price sits between $277,859 and $384,950 depending on neighborhood and home size. Pricing your home correctly from day one is the single most important factor in getting top dollar. Overpriced homes sit on the market and buyers start to wonder what is wrong with the property.</p>
-<h2>Why Working with a Local Harrison Broker Matters</h2>
-<p>Scott Windsor has lived in and served Harrison for over 24 years. He knows which streets command premium prices, which neighborhoods are trending up, and how to position your home to attract the most qualified buyers. Online estimates cannot replace that knowledge. When you work with Scott, you get a broker who grew up protecting this community and now dedicates himself to helping families build their futures in it.</p>
+<h2>Why Working with a Local Harrison Real Estate Agent Matters</h2>
+<p>Scott Windsor has lived in and served Harrison for over 24 years. He knows which streets command premium prices, which neighborhoods are trending up, and how to position your home to attract the most qualified buyers. Online estimates cannot replace that knowledge. When you work with Scott, you get a real estate agent who grew up protecting this community and now dedicates himself to helping families build their futures in it.</p>
 `;
 
   const appendPost2 = `
@@ -330,7 +330,7 @@ async function main() {
 <p>The combination of affordable entry-level pricing, strong Southwest Local School District, growing community character, and low cost of living makes Harrison one of the best first purchase markets in the Cincinnati region. You are not overpaying to get into a strong market. You are buying in a community with genuine long-term value drivers: good schools, outdoor recreation, new construction driving demand, and a cost of living that gives you financial breathing room after you close.</p>
 
 <h2>How Scott Windsor Works with First Time Buyers</h2>
-<p>Scott Windsor does not charge buyers anything for his services. Buyer agent commissions are paid by the seller, which means working with an experienced local broker costs first time buyers nothing out of pocket. What you get is 24 years of Harrison market knowledge, honest guidance on which neighborhoods hold value, help navigating your first offer and negotiation, and someone who will tell you the truth about a home's condition rather than just telling you what you want to hear. First time buyers who work with Scott come to closing better prepared, more confident, and with fewer surprises than buyers who navigate the process alone.</p>
+<p>Scott Windsor does not charge buyers anything for his services. Buyer agent commissions are paid by the seller, which means working with an experienced local real estate agent costs first time buyers nothing out of pocket. What you get is 24 years of Harrison market knowledge, honest guidance on which neighborhoods hold value, help navigating your first offer and negotiation, and someone who will tell you the truth about a home's condition rather than just telling you what you want to hear. First time buyers who work with Scott come to closing better prepared, more confident, and with fewer surprises than buyers who navigate the process alone.</p>
 
 <h2>Frequently Asked Questions</h2>
 <h3>How much do I need saved to buy a home in Harrison Ohio?</h3>

@@ -26,7 +26,7 @@ export default function HomeHero() {
       />
 
       {/* Lime accent bar at bottom */}
-      <div className="absolute bottom-0 left-0 right-0 h-1 bg-[#E8F840]" />
+      <div className="absolute bottom-0 left-0 right-0 h-1 bg-[#FF6B00]" />
 
       {/* Content â€” z-10 ensures it sits above the overlay */}
       <div className="relative z-10 container-wide pt-32 pb-20 text-center">
@@ -36,9 +36,9 @@ export default function HomeHero() {
           initial={{ opacity: 0, y: 16 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.1 }}
-          className="text-[#E8F840] text-xs font-bold uppercase tracking-widest font-inter mb-6"
+          className="text-[#FF6B00] text-xs font-bold uppercase tracking-widest font-inter mb-6"
         >
-          Harrison, Ohio &bull; Align Right Realty Infinity
+          Greater Cincinnati &bull; Southwest Ohio &bull; Align Right Realty Infinity
         </motion.p>
 
         {/* Headline */}
@@ -48,11 +48,11 @@ export default function HomeHero() {
           transition={{ duration: 0.7, delay: 0.2 }}
           className="font-playfair text-5xl md:text-6xl lg:text-7xl font-bold text-white leading-tight max-w-5xl mx-auto mb-6"
         >
-          Harrison&apos;s Most Trusted{" "}
+          Greater Cincinnati&apos;s{" "}
           <span className="relative inline-block">
-            Real Estate Broker
+            Trusted Real Estate Agent
             <span
-              className="absolute left-0 right-0 h-1 bg-[#E8F840]"
+              className="absolute left-0 right-0 h-1 bg-[#FF6B00]"
               style={{ bottom: "-6px" }}
             />
           </span>
@@ -66,7 +66,7 @@ export default function HomeHero() {
           className="text-xl md:text-2xl max-w-2xl mx-auto mb-10 font-inter font-light"
           style={{ color: "rgba(255,255,255,0.8)" }}
         >
-          24 years protecting this community. Now helping families buy and sell in it.
+          24 years protecting Harrison. Now helping families buy and sell across Greater Cincinnati and Southwest Ohio.
         </motion.p>
 
         {/* CTA Buttons */}
@@ -78,7 +78,7 @@ export default function HomeHero() {
         >
           <Link
             href="/listings"
-            className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-[#E8F840] text-[#1A1A1A] font-bold text-sm uppercase tracking-widest hover:bg-[#F2FF60] transition-all duration-300 font-inter"
+            className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-[#FF6B00] text-[#1A1A1A] font-bold text-sm uppercase tracking-widest hover:bg-[#FF8C33] transition-all duration-300 font-inter"
           >
             <Search className="w-4 h-4" />
             Search Homes

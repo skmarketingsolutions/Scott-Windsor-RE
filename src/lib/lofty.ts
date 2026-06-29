@@ -195,6 +195,19 @@ export async function getLoftyListings(): Promise<Listing[]> {
     .map(mapToListing);
 }
 
+/**
+ * Fetch a single Lofty listing by slug. Used by the listing detail page
+ * to serve Lofty listings that aren't in the Prisma DB.
+ */
+export async function getLoftyListingBySlug(slug: string): Promise<Listing | null> {
+  try {
+    const listings = await getLoftyListings();
+    return listings.find((l) => l.slug === slug) ?? null;
+  } catch {
+    return null;
+  }
+}
+
 // ─── Lead Creation ─────────────────────────────────────────────────────────────
 
 export interface LoftyLeadPayload {

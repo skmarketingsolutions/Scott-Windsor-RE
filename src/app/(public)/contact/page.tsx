@@ -6,7 +6,7 @@ import { Phone, Mail, MapPin, Clock } from "lucide-react";
 export const metadata: Metadata = {
   title: "Contact Scott Windsor | Harrison Ohio Realtor | 513-307-6449",
   description:
-    "Contact Scott Windsor — Harrison Ohio real estate broker. Call 513-307-6449 or fill out the form. Response within 24 hours.",
+    "Contact Scott Windsor — Harrison Ohio real estate agent. Call 513-307-6449 or fill out the form. Response within 24 hours.",
 };
 
 export default function ContactPage() {
@@ -14,7 +14,7 @@ export default function ContactPage() {
     <PublicLayout>
       <div className="bg-navy pt-28 pb-16">
         <div className="container-wide">
-          <p className="text-[#E8F840] text-xs font-bold uppercase tracking-widest font-inter mb-3">Get In Touch</p>
+          <p className="text-[#FF6B00] text-xs font-bold uppercase tracking-widest font-inter mb-3">Get In Touch</p>
           <h1 className="font-playfair text-4xl md:text-5xl font-bold text-white mb-4">
             Let&apos;s Talk Real Estate
           </h1>
@@ -49,7 +49,7 @@ export default function ContactPage() {
                 <div className="space-y-5">
                   <a href="tel:5133076449" className="flex items-start gap-4 group">
                     <div className="w-12 h-12 bg-navy flex items-center justify-center flex-shrink-0">
-                      <Phone className="w-5 h-5 text-[#E8F840]" />
+                      <Phone className="w-5 h-5 text-[#FF6B00]" />
                     </div>
                     <div>
                       <p className="text-xs font-semibold uppercase tracking-wider text-gray-400 font-inter mb-0.5">Phone</p>
@@ -58,7 +58,7 @@ export default function ContactPage() {
                   </a>
                   <a href="mailto:windsorinfinity@gmail.com" className="flex items-start gap-4 group">
                     <div className="w-12 h-12 bg-navy flex items-center justify-center flex-shrink-0">
-                      <Mail className="w-5 h-5 text-[#E8F840]" />
+                      <Mail className="w-5 h-5 text-[#FF6B00]" />
                     </div>
                     <div>
                       <p className="text-xs font-semibold uppercase tracking-wider text-gray-400 font-inter mb-0.5">Email</p>
@@ -67,7 +67,7 @@ export default function ContactPage() {
                   </a>
                   <div className="flex items-start gap-4">
                     <div className="w-12 h-12 bg-navy flex items-center justify-center flex-shrink-0">
-                      <MapPin className="w-5 h-5 text-[#E8F840]" />
+                      <MapPin className="w-5 h-5 text-[#FF6B00]" />
                     </div>
                     <div>
                       <p className="text-xs font-semibold uppercase tracking-wider text-gray-400 font-inter mb-0.5">Location</p>
@@ -77,7 +77,7 @@ export default function ContactPage() {
                   </div>
                   <div className="flex items-start gap-4">
                     <div className="w-12 h-12 bg-navy flex items-center justify-center flex-shrink-0">
-                      <Clock className="w-5 h-5 text-[#E8F840]" />
+                      <Clock className="w-5 h-5 text-[#FF6B00]" />
                     </div>
                     <div>
                       <p className="text-xs font-semibold uppercase tracking-wider text-gray-400 font-inter mb-0.5">Response Time</p>

@@ -21,7 +21,7 @@ export default function LatestBlogPosts({ posts }: LatestBlogPostsProps) {
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-4">
           <SectionHeader
             label="Market Insights"
-            title="Harrison Ohio Real Estate Blog"
+            title="Greater Cincinnati Real Estate Blog"
             subtitle="Local market updates, neighborhood guides, and expert advice."
           />
           <Link

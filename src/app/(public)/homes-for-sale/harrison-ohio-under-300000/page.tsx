@@ -51,7 +51,7 @@ export default function HarrisonUnder300k() {
       {/* Hero */}
       <section className="bg-[#2C2C2C] pt-28 pb-16">
         <div className="container-wide">
-          <p className="text-[#E8F840] text-xs font-bold uppercase tracking-widest font-inter mb-3">
+          <p className="text-[#FF6B00] text-xs font-bold uppercase tracking-widest font-inter mb-3">
             Affordable Harrison OH Homes
           </p>
           <h1 className="font-playfair text-4xl md:text-5xl font-bold text-white max-w-3xl leading-tight">
@@ -208,7 +208,7 @@ export default function HarrisonUnder300k() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
             <Link
               href="/listings"
-              className="bg-[#E8F840] text-[#1A1A1A] font-inter font-bold px-6 py-3 rounded hover:bg-yellow-300 transition-colors"
+              className="bg-[#FF6B00] text-[#1A1A1A] font-inter font-bold px-6 py-3 rounded hover:bg-yellow-300 transition-colors"
             >
               View All Listings
             </Link>

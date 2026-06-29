@@ -48,11 +48,11 @@ const neighborhoods = [
     inHarrison: false,
   },
   {
-    name: "New Baltimore",
-    slug: "new-baltimore",
-    tagline: "Rural acreage and estate properties",
+    name: "Okeana",
+    slug: "okeana",
+    tagline: "Country estates and rural properties in Butler County",
     photo: "/images/neighborhoods/new-baltimore.jpg",
-    highlight: "Acreage · Near Harrison",
+    highlight: "Butler County · Rural Estates",
     inHarrison: false,
   },
 ];
@@ -65,7 +65,7 @@ export default function NeighborhoodGrid() {
           <SectionHeader
             label="Explore Communities"
             title="Harrison & Southwest Ohio Communities"
-            subtitle="Parks of Whitewater, Trailhead, and The District are within Harrison city limits. Cleves, North Bend, and New Baltimore are nearby communities Scott serves throughout Southwest Ohio."
+            subtitle="Parks of Whitewater, Trailhead, and The District are within Harrison. Cleves, North Bend, and Okeana are nearby communities — and Scott covers the full Greater Cincinnati metro."
           />
           <Link
             href="/neighborhoods"
@@ -100,19 +100,19 @@ export default function NeighborhoodGrid() {
                 <div className="absolute inset-0 bg-gradient-to-t from-black/75 via-black/40 to-black/20 group-hover:from-black/65 transition-all duration-300" />
 
                 {/* Badge */}
-                <div className="absolute top-4 right-4 bg-[#E8F840] text-[#2C2C2C] text-xs font-bold uppercase tracking-wider px-2.5 py-1 font-inter leading-tight max-w-[180px] text-right">
+                <div className="absolute top-4 right-4 bg-[#FF6B00] text-[#2C2C2C] text-xs font-bold uppercase tracking-wider px-2.5 py-1 font-inter leading-tight max-w-[180px] text-right">
                   {n.highlight}
                 </div>
 
                 {/* Content */}
                 <div className="absolute bottom-0 left-0 right-0 p-6">
-                  <h3 className="font-playfair font-bold text-white text-xl mb-1 group-hover:text-[#E8F840] transition-colors">
+                  <h3 className="font-playfair font-bold text-white text-xl mb-1 group-hover:text-[#FF6B00] transition-colors">
                     {n.name}
                   </h3>
                   <p className="text-white/75 text-sm font-inter mb-3 leading-snug">
                     {n.tagline}
                   </p>
-                  <span className="text-[#E8F840] text-xs font-semibold uppercase tracking-widest flex items-center gap-2 group-hover:gap-3 transition-all font-inter">
+                  <span className="text-[#FF6B00] text-xs font-semibold uppercase tracking-widest flex items-center gap-2 group-hover:gap-3 transition-all font-inter">
                     View Homes
                     <ArrowRight className="w-3 h-3 group-hover:translate-x-1 transition-transform" />
                   </span>

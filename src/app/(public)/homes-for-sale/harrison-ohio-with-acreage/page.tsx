@@ -5,7 +5,7 @@ import LeadForm from "@/components/ui/LeadForm";
 export const metadata: Metadata = {
   title: "Acreage Homes Harrison OH | Scott Windsor Realtor",
   description:
-    "Find homes with land and acreage in Harrison Ohio and surrounding Whitewater Township, New Baltimore, and North Bend areas from Scott Windsor.",
+    "Find homes with land and acreage in Harrison Ohio and surrounding Whitewater Township, Okeana, and North Bend areas from Scott Windsor.",
 };
 
 const faqSchema = {
@@ -17,7 +17,7 @@ const faqSchema = {
       name: "Where can I find homes with acreage near Harrison Ohio?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "The best places to search for homes with acreage near Harrison Ohio are Whitewater Township, New Baltimore, and North Bend. These communities surround Harrison and offer rural and estate-style properties with larger lot sizes, often ranging from half an acre to 10 or more acres. Harrison itself also has a sparse suburban character with some larger lots, particularly in the outer neighborhoods.",
+        text: "The best places to search for homes with acreage near Harrison Ohio are Whitewater Township, Okeana, and North Bend. These communities surround Harrison and offer rural and estate-style properties with larger lot sizes, often ranging from half an acre to 10 or more acres. Harrison itself also has a sparse suburban character with some larger lots, particularly in the outer neighborhoods.",
       },
     },
     {
@@ -33,7 +33,7 @@ const faqSchema = {
       name: "What townships near Harrison Ohio have acreage properties?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Whitewater Township is the primary township surrounding Harrison and has a mix of rural, agricultural, and estate residential properties. North Bend along the Ohio River and New Baltimore to the south also have acreage properties. These communities sit within 30 to 40 minutes of Cincinnati via I-74 and local roads, making them practical for buyers who want land without complete rural isolation.",
+        text: "Whitewater Township is the primary township surrounding Harrison and has a mix of rural, agricultural, and estate residential properties. North Bend along the Ohio River and Okeana to the south also have acreage properties. These communities sit within 30 to 40 minutes of Cincinnati via I-74 and local roads, making them practical for buyers who want land without complete rural isolation.",
       },
     },
   ],
@@ -50,7 +50,7 @@ export default function HarrisonWithAcreage() {
       {/* Hero */}
       <section className="bg-[#2C2C2C] pt-28 pb-16">
         <div className="container-wide">
-          <p className="text-[#E8F840] text-xs font-bold uppercase tracking-widest font-inter mb-3">
+          <p className="text-[#FF6B00] text-xs font-bold uppercase tracking-widest font-inter mb-3">
             Acreage and Rural Properties
           </p>
           <h1 className="font-playfair text-4xl md:text-5xl font-bold text-white max-w-3xl leading-tight">
@@ -70,7 +70,7 @@ export default function HarrisonWithAcreage() {
             For buyers who want space, privacy, and the feeling of rural living without actually
             moving far from Cincinnati, the Harrison area offers something unusual. The city itself
             sits 30 minutes northwest of Cincinnati via I-74, and the townships surrounding it
-            still carry a genuinely rural character. Whitewater Township, New Baltimore, and North
+            still carry a genuinely rural character. Whitewater Township, Okeana, and North
             Bend all have homes with meaningful acreage at prices that are hard to find elsewhere
             at this distance from a major metro.
           </p>
@@ -93,12 +93,12 @@ export default function HarrisonWithAcreage() {
           </p>
 
           <h2 className="font-playfair text-2xl font-bold text-[#1A1A1A] mb-4 mt-8">
-            Whitewater Township, New Baltimore, and North Bend
+            Whitewater Township, Okeana, and North Bend
           </h2>
           <p className="text-[#555555] leading-relaxed mb-4 font-inter">
             Whitewater Township is the primary municipality surrounding Harrison and has the most
             consistent acreage inventory. Properties here range from modern homes on large rural
-            lots to working small farms. New Baltimore, to the south of Harrison along the Great
+            lots to working small farms. Okeana, to the south of Harrison along the Great
             Miami River, has an older stock of homes on generous lots with a quieter, more
             established feel. North Bend, situated along the Ohio River, has its own character
             and some notable estate-quality properties.
@@ -164,7 +164,7 @@ export default function HarrisonWithAcreage() {
               </h3>
               <p className="text-[#555555] font-inter leading-relaxed">
                 The best places to search for homes with acreage near Harrison Ohio are Whitewater
-                Township, New Baltimore, and North Bend. These communities surround Harrison and
+                Township, Okeana, and North Bend. These communities surround Harrison and
                 offer rural and estate-style properties with larger lot sizes, often ranging from
                 half an acre to 10 or more acres. Harrison itself also has a sparse suburban
                 character with some larger lots, particularly in the outer neighborhoods.
@@ -189,7 +189,7 @@ export default function HarrisonWithAcreage() {
               <p className="text-[#555555] font-inter leading-relaxed">
                 Whitewater Township is the primary township surrounding Harrison and has a mix of
                 rural, agricultural, and estate residential properties. North Bend along the Ohio
-                River and New Baltimore to the south also have acreage properties. These communities
+                River and Okeana to the south also have acreage properties. These communities
                 sit within 30 to 40 minutes of Cincinnati via I-74 and local roads.
               </p>
             </div>

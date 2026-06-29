@@ -51,7 +51,7 @@ export default function SellMyHomeClevesOhioPage() {
       {/* Hero */}
       <section className="bg-[#2C2C2C] pt-28 pb-16">
         <div className="container-wide">
-          <p className="text-[#E8F840] text-xs font-bold uppercase tracking-widest font-inter mb-3">
+          <p className="text-[#FF6B00] text-xs font-bold uppercase tracking-widest font-inter mb-3">
             Sell Your Cleves OH Home
           </p>
           <h1 className="font-playfair text-4xl md:text-5xl font-bold text-white max-w-3xl leading-tight">
@@ -59,7 +59,7 @@ export default function SellMyHomeClevesOhioPage() {
           </h1>
           <p className="text-white/70 font-inter mt-4 max-w-2xl text-lg">
             Cleves median home price is $369,565. Get a free market analysis from Scott
-            Windsor, Southwest Ohio&apos;s local broker, and find out exactly what your
+            Windsor, Southwest Ohio&apos;s local real estate agent, and find out exactly what your
             home is worth in today&apos;s market.
           </p>
         </div>

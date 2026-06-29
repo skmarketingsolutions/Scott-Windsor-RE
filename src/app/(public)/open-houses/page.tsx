@@ -8,8 +8,8 @@ import { formatPrice } from "@/lib/utils";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Open Houses in Harrison Ohio | Scott Windsor",
-  description: "Upcoming open houses in Harrison, Cleves, North Bend, and Southwest Ohio. Hosted by Scott Windsor — Align Right Realty Infinity.",
+  title: "Open Houses in Harrison, OH | Scott Windsor Realtor",
+  description: "Browse upcoming open houses in Harrison, Cleves, North Bend & Southwest Ohio. Hosted by Scott Windsor — Align Right Realty Infinity. Visit today.",
 };
 
 async function getOpenHouses() {
@@ -28,7 +28,7 @@ export default async function OpenHousesPage() {
     <PublicLayout>
       <div className="bg-navy pt-28 pb-16">
         <div className="container-wide">
-          <p className="text-[#E8F840] text-xs font-bold uppercase tracking-widest font-inter mb-3">Come See In Person</p>
+          <p className="text-[#FF6B00] text-xs font-bold uppercase tracking-widest font-inter mb-3">Come See In Person</p>
           <h1 className="font-playfair text-4xl md:text-5xl font-bold text-white mb-4">
             Upcoming Open Houses
           </h1>
@@ -45,7 +45,7 @@ export default async function OpenHousesPage() {
               {openHouses.map((oh) => (
                 <div key={oh.id} className="border border-gray-200 hover:border-gold transition-all group">
                   <div className="bg-navy p-4 flex items-center gap-4">
-                    <Calendar className="w-6 h-6 text-[#E8F840]" />
+                    <Calendar className="w-6 h-6 text-[#FF6B00]" />
                     <div>
                       <p className="text-white font-semibold font-inter">{oh.date}</p>
                       <div className="flex items-center gap-2 text-white/60 text-sm">

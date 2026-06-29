@@ -7,14 +7,15 @@ import LeadForm from "@/components/ui/LeadForm";
 import { Shield, Award, Home, Users, MapPin, Star } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "About Scott Windsor | Harrison Ohio Real Estate Broker",
+  title: "Scott Windsor | Harrison OH Realtor",
   description:
-    "Scott Windsor — retired Harrison firefighter of 24 years, now a multi-million dollar producing real estate broker/owner with Align Right Realty Infinity in Harrison, OH.",
+    "Scott Windsor — retired Harrison firefighter of 24 years & multi-million dollar agent. Based in Harrison OH, serving Greater Cincinnati & SW Ohio.",
   keywords: [
-    "scott windsor realtor harrison ohio",
+    "scott windsor realtor cincinnati",
+    "greater cincinnati real estate agent",
     "align right realty infinity harrison ohio",
-    "best real estate agent harrison ohio",
-    "harrison ohio broker owner",
+    "cincinnati tri state realtor",
+    "harrison ohio real estate agent",
     "harrison firefighter turned realtor",
   ],
 };
@@ -52,15 +53,15 @@ export default async function AboutPage() {
         <div className="absolute inset-0 bg-gradient-to-t from-[#2C2C2C] via-[#2C2C2C]/80 to-[#2C2C2C]/40" />
         <div className="relative container-wide pb-16 pt-28">
           <div className="flex items-end gap-8">
-            <div className="w-32 h-32 md:w-40 md:h-40 rounded-full overflow-hidden border-4 border-[#E8F840] flex-shrink-0">
+            <div className="w-32 h-32 md:w-40 md:h-40 rounded-full overflow-hidden border-4 border-[#FF6B00] flex-shrink-0">
               <img
                 src="/images/scott-windsor-headshot.jpg"
-                alt="Scott Windsor — Harrison Ohio Real Estate Broker"
+                alt="Scott Windsor — Harrison Ohio Real Estate Agent"
                 className="w-full h-full object-cover object-top"
               />
             </div>
             <div>
-              <p className="text-[#E8F840] text-xs font-bold uppercase tracking-widest font-inter mb-3">Scott Windsor</p>
+              <p className="text-[#FF6B00] text-xs font-bold uppercase tracking-widest font-inter mb-3">Scott Windsor</p>
               <h1 className="font-playfair text-4xl md:text-6xl font-bold text-white max-w-3xl leading-tight">
                 From Fighting Fires to Finding Homes
               </h1>
@@ -76,7 +77,7 @@ export default async function AboutPage() {
             {[
               { icon: Shield, label: "24 Yrs", sub: "Harrison Fire Dept." },
               { icon: Award, label: "Multi-Million", sub: "Dollar Producer" },
-              { icon: Home, label: "Broker/Owner", sub: "Align Right Realty Infinity" },
+              { icon: Home, label: "Owner & Agent", sub: "Align Right Realty Infinity" },
               { icon: Users, label: "500+ Families", sub: "Helped in SW Ohio" },
             ].map(({ icon: Icon, label, sub }) => (
               <div key={label} className="flex flex-col items-center">
@@ -111,12 +112,12 @@ export default async function AboutPage() {
               </p>
 
               <p className="text-gray-600 leading-relaxed font-inter">
-                As the broker/owner of Align Right Realty Infinity, Scott has grown
-                into one of Southwest Ohio&apos;s most respected real estate professionals.
-                He&apos;s a multi-million dollar producer, but what sets him apart
-                isn&apos;t the volume. It&apos;s the fact that every client gets the same
-                honest, direct, community-first approach that defined his 24 years
-                in the firehouse.
+                As the Owner and Agent of Align Right Realty Infinity, Scott covers the
+                full Greater Cincinnati metro and Southwest Ohio. He&apos;s a multi-million
+                dollar producer, but what sets him apart isn&apos;t the volume. It&apos;s
+                the fact that every client gets the same honest, direct, community-first
+                approach that defined his 24 years in the firehouse — now applied across
+                the entire Cincinnati market.
               </p>
 
               <p className="text-gray-600 leading-relaxed font-inter">
@@ -128,10 +129,10 @@ export default async function AboutPage() {
               </p>
 
               <p className="text-gray-600 leading-relaxed font-inter">
-                Whether you&apos;re a first-time buyer figuring out the process, a
-                seller who needs a real marketing strategy, or a family relocating
-                from Cincinnati looking for the best value in Hamilton County,
+                Whether you&apos;re buying in Harrison, searching the Cincinnati suburbs,
+                relocating from out of state, or looking anywhere across Greater Cincinnati,
                 Scott&apos;s approach is the same: straight talk, hard work, and results.
+                He&apos;s not a one-zip-code agent — he knows this entire market.
               </p>
 
               <div className="bg-offwhite p-6 border-l-4 border-gold mt-4">
@@ -154,16 +155,16 @@ export default async function AboutPage() {
                 </h3>
                 <ul className="space-y-3">
                   {[
-                    "Licensed Ohio Real Estate Broker",
-                    "Broker/Owner, Align Right Realty Infinity",
+                    "Licensed Ohio Real Estate Agent",
+                    "Owner and Agent, Align Right Realty Infinity",
                     "24-Year Harrison Fire Department Veteran",
                     "Multi-Million Dollar Producer",
-                    "Southwest Ohio Market Specialist",
+                    "Greater Cincinnati Specialist",
                     "New Construction Expert",
                     "First-Time Buyer Specialist",
                   ].map((item) => (
                     <li key={item} className="flex items-start gap-2.5 text-sm text-white/80 font-inter">
-                      <Star className="w-3.5 h-3.5 text-[#E8F840] flex-shrink-0 mt-0.5" />
+                      <Star className="w-3.5 h-3.5 text-[#FF6B00] flex-shrink-0 mt-0.5" />
                       {item}
                     </li>
                   ))}
@@ -178,12 +179,10 @@ export default async function AboutPage() {
                 <ul className="space-y-2">
                   {[
                     "Harrison, OH 45030",
-                    "Cleves, OH",
-                    "North Bend, OH",
-                    "New Baltimore, OH",
+                    "Greater Cincinnati Metro",
+                    "Hamilton, Butler & Warren Counties",
+                    "Cleves · North Bend · Okeana",
                     "Whitewater Township",
-                    "Hamilton County",
-                    "Butler County",
                     "All of Southwest Ohio",
                   ].map((area) => (
                     <li key={area} className="flex items-center gap-2 text-sm text-gray-600 font-inter">
@@ -215,7 +214,7 @@ export default async function AboutPage() {
         <div className="container-wide">
           <p className="label-gold mb-3">Community First</p>
           <h2 className="font-playfair text-3xl font-bold text-navy mb-8 max-w-xl">
-            Still Serving Harrison After All These Years
+            Rooted in Harrison. Serving Greater Cincinnati.
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {[
@@ -225,7 +224,7 @@ export default async function AboutPage() {
               },
               {
                 title: "Local Knowledge",
-                body: "From the parks along the Whitewater to the new construction off I-74, Scott knows every pocket of this market: streets, subdivisions, schools, and values.",
+                body: "From Harrison's new construction corridors to the Cincinnati suburbs and beyond — Scott knows the Greater Cincinnati market: streets, subdivisions, price points, and trends.",
               },
               {
                 title: "Honest Advice",
@@ -264,7 +263,7 @@ export default async function AboutPage() {
         <div className="container-wide">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
-              <p className="text-[#E8F840] text-xs font-bold uppercase tracking-widest font-inter mb-4">Ready to Work Together?</p>
+              <p className="text-[#FF6B00] text-xs font-bold uppercase tracking-widest font-inter mb-4">Ready to Work Together?</p>
               <h2 className="font-playfair text-3xl font-bold text-white mb-4">
                 Let&apos;s Talk About Your Move
               </h2>

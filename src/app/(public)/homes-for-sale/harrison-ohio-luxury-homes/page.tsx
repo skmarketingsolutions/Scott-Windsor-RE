@@ -26,7 +26,7 @@ const faqSchema = {
       name: "What is the most expensive neighborhood in Harrison OH?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "The Trailhead community built by Drees Homes represents some of the highest price points in the Harrison market, with homes starting at $420,100 and extending past $600,000. Anderson Township, just east of Harrison proper, also features premium properties, with homes such as 2289 Lauren Close listed at $625,000 for 4 bedrooms and 4 baths in 3,990 square feet. Estate properties in Whitewater Township with larger acreage parcels round out the luxury segment.",
+        text: "The Trailhead community built by Drees Homes represents some of the highest price points in the Harrison market, with homes starting at $420,100 and extending past $600,000. Scott has closed at the top of this market — including 1516 Fairchild Dr, Harrison sold for $525,000 (4BD/3.5BA/3,240 sqft) and 7887 Hamilton Scipio Rd, Okeana sold for $670,000. Estate properties in Whitewater Township with larger acreage parcels round out the luxury segment.",
       },
     },
     {
@@ -51,7 +51,7 @@ export default function LuxuryHomesHarrisonOhio() {
       {/* Hero */}
       <section className="bg-[#2C2C2C] pt-28 pb-16">
         <div className="container-wide">
-          <p className="text-[#E8F840] text-xs font-bold uppercase tracking-widest font-inter mb-3">
+          <p className="text-[#FF6B00] text-xs font-bold uppercase tracking-widest font-inter mb-3">
             Premium Harrison OH Properties
           </p>
           <h1 className="font-playfair text-4xl md:text-5xl font-bold text-white max-w-3xl leading-tight">
@@ -102,16 +102,17 @@ export default function LuxuryHomesHarrisonOhio() {
           </h2>
           <p className="text-[#555555] leading-relaxed mb-4 font-inter">
             Beyond new construction, the resale luxury segment in Harrison includes estate
-            properties in Whitewater Township and New Baltimore with larger lots and acreage.
+            properties in Whitewater Township and Okeana with larger lots and acreage.
             These homes offer a fundamentally different lifestyle from subdivision living. Buyers
             at this tier often want privacy, outdoor space, and a property that feels like a
             genuine country home while remaining 30 minutes from Cincinnati via I-74.
           </p>
           <p className="text-[#555555] leading-relaxed mb-4 font-inter">
-            Anderson Township properties extend the luxury inventory available to buyers working
-            with Scott. A recent example: 2289 Lauren Close listed at $625,000, offering 4
-            bedrooms, 4 baths, and 3,990 square feet. Properties like this illustrate the range
-            of what is available at the top of the local market.
+            Scott has closed at the top of this market. A recent example: 1516 Fairchild Dr,
+            Harrison — 4 bedrooms, 3.5 baths, 3,240 square feet, sold for $525,000. And 7887
+            Hamilton Scipio Rd in Okeana, sold for $670,000 — a 3-bedroom, 3-bath estate on
+            acreage. Properties like these illustrate the range of what Scott delivers at the
+            top of the local market.
           </p>
 
           <h2 className="font-playfair text-2xl font-bold text-[#1A1A1A] mb-4 mt-8">

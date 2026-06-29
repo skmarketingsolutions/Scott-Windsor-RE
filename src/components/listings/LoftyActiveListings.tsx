@@ -43,20 +43,13 @@ export default async function LoftyActiveListings() {
           </p>
         )}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {listings.map((listing, i) => {
-            const isLofty = listing.id.startsWith("lofty-");
-            const href = isLofty
-              ? `/contact?listing=${encodeURIComponent(listing.address + ", " + listing.city)}`
-              : undefined;
-            return (
+          {listings.map((listing, i) => (
               <ListingCard
                 key={listing.id}
                 listing={listing as any}
                 priority={i < 3}
-                href={href}
               />
-            );
-          })}
+            ))}
         </div>
       </div>
     </section>

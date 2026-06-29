@@ -6,7 +6,7 @@ import LeadForm from "@/components/ui/LeadForm";
 export const metadata: Metadata = {
   title: "Sell My Home Harrison Ohio | Free CMA Scott Windsor",
   description:
-    "Ready to sell your home in Harrison Ohio? Get a free market analysis from local broker Scott Windsor at Align Right Realty Infinity. Call 513-307-6449.",
+    "Ready to sell your home in Harrison Ohio? Get a free market analysis from local real estate agent Scott Windsor at Align Right Realty Infinity. Call 513-307-6449.",
 };
 
 const faqSchema = {
@@ -59,7 +59,7 @@ export default function SellMyHomeHarrisonOhioPage() {
       {/* Hero */}
       <section className="bg-[#2C2C2C] pt-28 pb-16">
         <div className="container-wide">
-          <p className="text-[#E8F840] text-xs font-bold uppercase tracking-widest font-inter mb-3">
+          <p className="text-[#FF6B00] text-xs font-bold uppercase tracking-widest font-inter mb-3">
             Sell Your Harrison OH Home
           </p>
           <h1 className="font-playfair text-4xl md:text-5xl font-bold text-white max-w-3xl leading-tight">
@@ -67,7 +67,7 @@ export default function SellMyHomeHarrisonOhioPage() {
           </h1>
           <p className="text-white/70 font-inter mt-4 max-w-2xl text-lg">
             Harrison homes are selling at 98.4% of asking price with an average of 43 days
-            on market. Get a free CMA from local broker Scott Windsor and know exactly what
+            on market. Get a free CMA from local real estate agent Scott Windsor and know exactly what
             your home is worth before you list.
           </p>
         </div>

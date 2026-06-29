@@ -50,7 +50,7 @@ export default function HarrisonRanchHomes() {
       {/* Hero */}
       <section className="bg-[#2C2C2C] pt-28 pb-16">
         <div className="container-wide">
-          <p className="text-[#E8F840] text-xs font-bold uppercase tracking-widest font-inter mb-3">
+          <p className="text-[#FF6B00] text-xs font-bold uppercase tracking-widest font-inter mb-3">
             Ranch Homes Harrison OH
           </p>
           <h1 className="font-playfair text-4xl md:text-5xl font-bold text-white max-w-3xl leading-tight">
@@ -83,10 +83,10 @@ export default function HarrisonRanchHomes() {
             useful benchmark when evaluating what they are paying per usable foot.
           </p>
           <p className="text-[#555555] leading-relaxed mb-4 font-inter">
-            Scott Windsor recently listed 776 Linda Vista Dr in Manchester, a 3-bedroom ranch at
-            $149,900 with 1,345 square feet. This type of property represents the entry point of
-            the ranch market in the area and demonstrates that genuinely affordable ranch living
-            still exists within a short drive of Harrison.
+            A recent example from Scott&apos;s closings: 106 Westfield Dr, Harrison, OH — a 4-bedroom,
+            1-bathroom ranch home at 1,056 square feet that sold for $156,000. This type of property
+            represents the entry point of the ranch market and demonstrates that genuinely affordable
+            ranch living still exists right here in Harrison 45030.
           </p>
 
           <h2 className="font-playfair text-2xl font-bold text-[#1A1A1A] mb-4 mt-8">

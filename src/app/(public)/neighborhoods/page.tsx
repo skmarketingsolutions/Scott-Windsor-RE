@@ -4,10 +4,10 @@ import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Harrison Ohio Neighborhoods | Explore Communities | Scott Windsor",
+  title: "Harrison OH Neighborhoods | Homes for Sale | Scott Windsor",
   description:
-    "Explore Harrison Ohio neighborhoods — Parks of Whitewater, Trailhead, The District, Cleves, North Bend, New Baltimore, and Whitewater Township. Find homes in your ideal community.",
-  keywords: ["harrison ohio neighborhoods", "harrison ohio communities", "best neighborhoods harrison ohio", "where to live harrison ohio"],
+    "Discover homes for sale in Harrison OH neighborhoods including Cleves, North Bend, Okeana, Trailhead, and Whitewater Township with Scott Windsor.",
+  keywords: ["harrison ohio neighborhoods", "harrison ohio communities", "best neighborhoods harrison ohio", "where to live harrison ohio", "okeana ohio homes"],
 };
 
 const neighborhoods = [
@@ -16,7 +16,7 @@ const neighborhoods = [
   { name: "The District (DORA)", slug: "the-district", tagline: "Walkable downtown living in Harrison's DORA", type: "Established", highlight: "Harrison Downtown District", photo: "/images/neighborhoods/the-district.jpg", desc: "The Harrison DORA (Designated Outdoor Refreshment Area) has revitalized downtown, creating a walkable neighborhood of renovated homes, local restaurants, and community events." },
   { name: "Cleves", slug: "cleves", tagline: "Charming village with a small-town feel", type: "Established Village", highlight: "Hamilton County · SW Local Schools", photo: "/images/neighborhoods/cleves.jpg", desc: "Cleves is a historic village in Hamilton County: affordable, walkable, and about 20 minutes from downtown Cincinnati. Great for buyers who want character and community." },
   { name: "North Bend", slug: "north-bend", tagline: "Historic river community with character", type: "Historic", highlight: "Ohio River Views · Unique Homes", photo: "/images/neighborhoods/north-bend.jpg", desc: "North Bend sits along the Ohio River and offers some of the most distinctive historic homes in the area. Known for larger lots, mature trees, and a quiet, established neighborhood feel." },
-  { name: "New Baltimore", slug: "new-baltimore", tagline: "Rural acreage and estate properties", type: "Rural / Suburban", highlight: "Space & Privacy · Larger Lots", photo: "/images/neighborhoods/new-baltimore.jpg", desc: "New Baltimore attracts buyers who want land: rural lots, hobby farms, and estate-size properties within the SW Ohio market. Still within Southwest Local School District." },
+  { name: "Okeana", slug: "okeana", tagline: "Country estates and rural properties in Butler County", type: "Rural / Estate", highlight: "Butler County · Rural Estates", photo: "/images/neighborhoods/new-baltimore.jpg", desc: "Okeana is a small Butler County community offering rural estate properties, larger acreage parcels, and country living within Scott's service area. Known for scenic farmland and privacy." },
   { name: "Whitewater Township", slug: "whitewater-township", tagline: "Rural township with suburban convenience", type: "Township", highlight: "Larger Lots · Agricultural Feel", photo: "/images/neighborhoods/parks-of-whitewater.jpg", desc: "Whitewater Township encompasses much of the rural land between Harrison and the Indiana border. Offers acreage properties, low traffic, and access to Whitewater Memorial State Park." },
 ];
 
@@ -25,12 +25,12 @@ export default function NeighborhoodsPage() {
     <PublicLayout>
       <div className="bg-navy pt-28 pb-16">
         <div className="container-wide">
-          <p className="text-[#E8F840] text-xs font-bold uppercase tracking-widest font-inter mb-3">Explore Communities</p>
+          <p className="text-[#FF6B00] text-xs font-bold uppercase tracking-widest font-inter mb-3">Explore Communities</p>
           <h1 className="font-playfair text-4xl md:text-5xl font-bold text-white mb-4">
             Harrison &amp; Southwest Ohio Communities
           </h1>
           <p className="text-white/70 text-lg font-inter max-w-xl">
-            Parks of Whitewater, Trailhead, and The District are in Harrison. Cleves, North Bend, New Baltimore, and Whitewater Township are nearby communities Scott serves throughout Southwest Ohio.
+            Parks of Whitewater, Trailhead, and The District are in Harrison. Cleves, North Bend, Okeana, and Whitewater Township are nearby communities Scott serves throughout Southwest Ohio.
           </p>
         </div>
       </div>
@@ -51,7 +51,7 @@ export default function NeighborhoodsPage() {
                     style={{ backgroundImage: `url('${n.photo}')` }}
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent" />
-                  <div className="absolute top-3 left-3 bg-[#E8F840] text-[#2C2C2C] text-xs font-bold uppercase tracking-wider px-2.5 py-1 font-inter">
+                  <div className="absolute top-3 left-3 bg-[#FF6B00] text-[#2C2C2C] text-xs font-bold uppercase tracking-wider px-2.5 py-1 font-inter">
                     {n.type}
                   </div>
                 </div>

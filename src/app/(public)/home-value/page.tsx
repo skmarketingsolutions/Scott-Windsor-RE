@@ -15,13 +15,13 @@ export default function HomeValuePage() {
 
             {/* LEFT: Headline + copy */}
             <div className="pt-4">
-              <p className="text-[#E8F840] text-xs font-bold uppercase tracking-widest font-inter mb-5">
+              <p className="text-[#FF6B00] text-xs font-bold uppercase tracking-widest font-inter mb-5">
                 Free for Harrison Homeowners
               </p>
 
               <h1 className="font-playfair text-4xl md:text-5xl lg:text-[52px] font-bold text-white mb-6 leading-[1.1]">
                 Find Out What Your Harrison Home Will Actually Sell For —
-                <span className="text-[#E8F840]"> Not the Zillow Guess.</span>
+                <span className="text-[#FF6B00]"> Not the Zillow Guess.</span>
               </h1>
 
               <p className="text-white/65 text-lg font-inter leading-relaxed mb-8 max-w-xl">
@@ -38,7 +38,7 @@ export default function HomeValuePage() {
                   { icon: CheckCircle, text: "Real MLS comps — not an algorithm" },
                 ].map(({ icon: Icon, text }) => (
                   <div key={text} className="flex items-center gap-3">
-                    <Icon className="w-5 h-5 text-[#E8F840] flex-shrink-0" />
+                    <Icon className="w-5 h-5 text-[#FF6B00] flex-shrink-0" />
                     <span className="text-white/70 text-sm font-inter">{text}</span>
                   </div>
                 ))}
@@ -52,7 +52,7 @@ export default function HomeValuePage() {
                   { stat: "$181",  label: "Median price / sq ft" },
                 ].map(({ stat, label }) => (
                   <div key={label} className="text-center">
-                    <p className="font-playfair text-2xl font-bold text-[#E8F840]">{stat}</p>
+                    <p className="font-playfair text-2xl font-bold text-[#FF6B00]">{stat}</p>
                     <p className="text-white/40 text-xs font-inter mt-0.5">{label}</p>
                   </div>
                 ))}
@@ -64,7 +64,7 @@ export default function HomeValuePage() {
 
             {/* RIGHT: Form card */}
             <div className="bg-white shadow-2xl">
-              <div className="bg-[#E8F840] px-7 py-5">
+              <div className="bg-[#FF6B00] px-7 py-5">
                 <p className="text-[#1A1A1A] text-xs font-bold uppercase tracking-widest font-inter mb-1">
                   Request Your Free Video Report
                 </p>
@@ -98,7 +98,7 @@ export default function HomeValuePage() {
       <section className="section-padding bg-white">
         <div className="container-wide max-w-4xl mx-auto">
           <div className="text-center mb-10">
-            <p className="text-[#E8F840] bg-[#1A1A1A] inline-block text-xs font-bold uppercase tracking-widest font-inter px-3 py-1.5 mb-5">
+            <p className="text-[#FF6B00] bg-[#1A1A1A] inline-block text-xs font-bold uppercase tracking-widest font-inter px-3 py-1.5 mb-5">
               The Problem With Every Other Tool
             </p>
             <h2 className="font-playfair text-3xl md:text-4xl font-bold text-[#1A1A1A] mb-5">
@@ -139,8 +139,8 @@ export default function HomeValuePage() {
               {
                 tag: "Scott Windsor",
                 title: "The Real Number",
-                bg: "bg-[#1A1A1A]", header: "bg-[#E8F840]",
-                icon: CheckCircle, iconColor: "text-[#E8F840]",
+                bg: "bg-[#1A1A1A]", header: "bg-[#FF6B00]",
+                icon: CheckCircle, iconColor: "text-[#FF6B00]",
                 textColor: "text-white/75",
                 featured: true,
                 items: [
@@ -198,7 +198,7 @@ export default function HomeValuePage() {
       <section className="section-padding bg-[#F7F7F7]">
         <div className="container-wide max-w-3xl mx-auto">
           <div className="text-center mb-10">
-            <p className="text-[#E8F840] bg-[#1A1A1A] inline-block text-xs font-bold uppercase tracking-widest font-inter px-3 py-1.5 mb-5">
+            <p className="text-[#FF6B00] bg-[#1A1A1A] inline-block text-xs font-bold uppercase tracking-widest font-inter px-3 py-1.5 mb-5">
               What You Actually Get
             </p>
             <h2 className="font-playfair text-3xl md:text-4xl font-bold text-[#1A1A1A]">
@@ -243,7 +243,7 @@ export default function HomeValuePage() {
                 <div>
                   <div className="flex flex-wrap items-center gap-3 mb-2">
                     <h3 className="font-inter font-bold text-[#1A1A1A] text-base">{title}</h3>
-                    <span className="bg-[#E8F840] text-[#1A1A1A] text-xs font-bold font-inter px-2 py-0.5 uppercase tracking-wide">
+                    <span className="bg-[#FF6B00] text-[#1A1A1A] text-xs font-bold font-inter px-2 py-0.5 uppercase tracking-wide">
                       {value}
                     </span>
                   </div>
@@ -254,7 +254,7 @@ export default function HomeValuePage() {
           </div>
 
           {/* Total value callout */}
-          <div className="bg-[#1A1A1A] p-7 mt-0 border-t-4 border-[#E8F840]">
+          <div className="bg-[#1A1A1A] p-7 mt-0 border-t-4 border-[#FF6B00]">
             <div className="flex flex-col md:flex-row md:items-center justify-between gap-6">
               <div>
                 <p className="text-white/40 text-xs font-inter uppercase tracking-widest mb-1">Total value</p>
@@ -262,13 +262,13 @@ export default function HomeValuePage() {
                   $500+ <span className="text-white/30 line-through text-xl ml-2">if you paid for it</span>
                 </p>
                 <p className="text-white/50 font-inter text-sm mt-2">
-                  Your cost: <strong className="text-[#E8F840]">$0.</strong>{" "}
+                  Your cost: <strong className="text-[#FF6B00]">$0.</strong>{" "}
                   Because Scott spent 24 years as a Harrison firefighter — and that&apos;s not how he operates.
                 </p>
               </div>
               <a
                 href="#get-started"
-                className="flex-shrink-0 bg-[#E8F840] text-[#1A1A1A] font-bold font-inter px-8 py-4 text-sm uppercase tracking-wider flex items-center gap-2 hover:bg-white transition-colors"
+                className="flex-shrink-0 bg-[#FF6B00] text-[#1A1A1A] font-bold font-inter px-8 py-4 text-sm uppercase tracking-wider flex items-center gap-2 hover:bg-white transition-colors"
               >
                 Get Mine Free <ArrowRight className="w-4 h-4" />
               </a>
@@ -310,7 +310,7 @@ export default function HomeValuePage() {
               <div key={name} className="border border-gray-100 bg-[#F7F7F7] p-7">
                 <div className="flex gap-0.5 mb-4">
                   {[...Array(5)].map((_, i) => (
-                    <Star key={i} className="w-4 h-4 fill-[#E8F840] text-[#E8F840]" />
+                    <Star key={i} className="w-4 h-4 fill-[#FF6B00] text-[#FF6B00]" />
                   ))}
                 </div>
                 <p className="text-gray-700 font-inter text-sm leading-relaxed mb-5 italic">
@@ -331,7 +331,7 @@ export default function HomeValuePage() {
         <div className="container-wide max-w-4xl mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
             <div>
-              <p className="text-[#E8F840] text-xs font-bold uppercase tracking-widest font-inter mb-4">
+              <p className="text-[#FF6B00] text-xs font-bold uppercase tracking-widest font-inter mb-4">
                 Why Take Real Estate Advice From a Firefighter?
               </p>
               <h2 className="font-playfair text-3xl font-bold text-white mb-5">
@@ -350,11 +350,11 @@ export default function HomeValuePage() {
                 I give you the real numbers. I tell you what I&apos;d do if it were my house. And if
                 you decide not to sell, or to use a different agent — that&apos;s your call. No hard feelings.
               </p>
-              <div className="border-l-4 border-[#E8F840] pl-5">
+              <div className="border-l-4 border-[#FF6B00] pl-5">
                 <p className="text-white font-bold font-inter">Scott Windsor</p>
                 <p className="text-white/50 text-sm font-inter">Broker | Align Right Realty Infinity</p>
                 <p className="text-white/50 text-sm font-inter">24-Year Harrison Firefighter</p>
-                <a href="tel:5133076449" className="text-[#E8F840] text-sm font-bold font-inter mt-1 block hover:text-white transition-colors">
+                <a href="tel:5133076449" className="text-[#FF6B00] text-sm font-bold font-inter mt-1 block hover:text-white transition-colors">
                   513-307-6449
                 </a>
               </div>
@@ -368,7 +368,7 @@ export default function HomeValuePage() {
               ].map(({ label, value }) => (
                 <div key={label} className="flex items-center justify-between border-b border-white/10 pb-4 last:border-0">
                   <span className="text-white/50 font-inter text-sm">{label}</span>
-                  <span className="font-playfair text-2xl font-bold text-[#E8F840]">{value}</span>
+                  <span className="font-playfair text-2xl font-bold text-[#FF6B00]">{value}</span>
                 </div>
               ))}
             </div>
@@ -380,7 +380,7 @@ export default function HomeValuePage() {
       <section id="get-started" className="section-padding bg-white">
         <div className="container-wide max-w-2xl mx-auto">
           <div className="text-center mb-10">
-            <p className="text-[#E8F840] bg-[#1A1A1A] inline-block text-xs font-bold uppercase tracking-widest font-inter px-3 py-1.5 mb-5">
+            <p className="text-[#FF6B00] bg-[#1A1A1A] inline-block text-xs font-bold uppercase tracking-widest font-inter px-3 py-1.5 mb-5">
               Ready to Know Your Number?
             </p>
             <h2 className="font-playfair text-3xl md:text-4xl font-bold text-[#1A1A1A] mb-4">

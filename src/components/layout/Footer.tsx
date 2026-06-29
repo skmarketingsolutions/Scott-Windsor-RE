@@ -17,7 +17,7 @@ const footerLinks = {
     { label: "The District (DORA)", href: "/neighborhoods/the-district" },
     { label: "Cleves Ohio", href: "/neighborhoods/cleves" },
     { label: "North Bend Ohio", href: "/neighborhoods/north-bend" },
-    { label: "New Baltimore Ohio", href: "/neighborhoods/new-baltimore" },
+    { label: "Okeana Ohio", href: "/neighborhoods/okeana" },
   ],
   Resources: [
     { label: "Moving to Harrison", href: "/moving-to-harrison-ohio" },
@@ -38,7 +38,7 @@ export default function Footer() {
           {/* Brand Column */}
           <div className="lg:col-span-2">
             <Link href="/" className="flex items-center gap-4 mb-6">
-              <div className="w-14 h-14 rounded-full overflow-hidden flex-shrink-0 border-2 border-[#E8F840]">
+              <div className="w-14 h-14 rounded-full overflow-hidden flex-shrink-0 border-2 border-[#FF6B00]">
                 <Image
                   src="/images/scott-windsor-headshot.jpg"
                   alt="Scott Windsor"
@@ -51,15 +51,15 @@ export default function Footer() {
                 <div className="font-playfair font-bold text-xl text-white">
                   Scott Windsor
                 </div>
-                <div className="text-[#E8F840] text-xs uppercase tracking-widest font-semibold mt-0.5">
+                <div className="text-[#FF6B00] text-xs uppercase tracking-widest font-semibold mt-0.5">
                   Align Right Realty Infinity
                 </div>
               </div>
             </Link>
             <p className="text-white/70 text-sm leading-relaxed mb-6 max-w-sm">
-              Retired Harrison firefighter. Multi-million dollar broker/owner.
-              Helping families buy and sell homes in the community I spent
-              24 years protecting.
+              Retired Harrison firefighter. Multi-million dollar real estate agent.
+              Based in Harrison, serving the full Greater Cincinnati metro and
+              Southwest Ohio.
             </p>
 
             <div className="space-y-3">
@@ -67,18 +67,18 @@ export default function Footer() {
                 href="tel:5133076449"
                 className="flex items-center gap-3 text-sm text-white/80 hover:text-gold transition-colors"
               >
-                <Phone className="w-4 h-4 text-[#E8F840] flex-shrink-0" />
+                <Phone className="w-4 h-4 text-[#FF6B00] flex-shrink-0" />
                 513-307-6449
               </a>
               <a
                 href="mailto:windsorinfinity@gmail.com"
                 className="flex items-center gap-3 text-sm text-white/80 hover:text-gold transition-colors"
               >
-                <Mail className="w-4 h-4 text-[#E8F840] flex-shrink-0" />
+                <Mail className="w-4 h-4 text-[#FF6B00] flex-shrink-0" />
                 windsorinfinity@gmail.com
               </a>
               <div className="flex items-start gap-3 text-sm text-white/80">
-                <MapPin className="w-4 h-4 text-[#E8F840] flex-shrink-0 mt-0.5" />
+                <MapPin className="w-4 h-4 text-[#FF6B00] flex-shrink-0 mt-0.5" />
                 <span>Harrison, Ohio 45030<br />Hamilton County</span>
               </div>
             </div>
@@ -108,7 +108,7 @@ export default function Footer() {
           {/* Link Columns */}
           {Object.entries(footerLinks).map(([title, links]) => (
             <div key={title}>
-              <h4 className="text-[#E8F840] text-xs font-bold uppercase tracking-widest mb-5 font-inter">
+              <h4 className="text-[#FF6B00] text-xs font-bold uppercase tracking-widest mb-5 font-inter">
                 {title}
               </h4>
               <ul className="space-y-3">
@@ -138,7 +138,7 @@ export default function Footer() {
           <div className="flex items-center gap-6 text-xs text-white/50">
             <span>Harrison, OH 45030</span>
             <span className="text-white/20">|</span>
-            <span>Hamilton &amp; Butler County</span>
+            <span>Greater Cincinnati</span>
             <span className="text-white/20">|</span>
             <Link href="/admin" className="hover:text-white/70 transition-colors">
               Agent Login

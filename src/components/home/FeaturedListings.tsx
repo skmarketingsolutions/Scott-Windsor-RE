@@ -65,7 +65,7 @@ export default function FeaturedListings({ listings }: FeaturedListingsProps) {
                           <span className="text-[#555555] text-sm">No photo</span>
                         </div>
                       )}
-                      <div className="absolute top-3 left-3 bg-[#E8F840] text-[#1A1A1A] text-xs font-bold uppercase tracking-wider px-2.5 py-1 font-inter">
+                      <div className="absolute top-3 left-3 bg-[#FF6B00] text-[#1A1A1A] text-xs font-bold uppercase tracking-wider px-2.5 py-1 font-inter">
                         Active
                       </div>
                     </div>
