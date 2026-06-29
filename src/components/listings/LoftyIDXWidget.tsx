@@ -2,7 +2,7 @@
 
 import { useEffect, useRef } from "react";
 
-const WIDGET_SRC = "https://scottw.alignrightinfinity.com/api-site/widget/85574";
+const WIDGET_SRC = "https://scottw.alignrightinfinity.com/listing";
 
 export default function LoftyIDXWidget() {
   const iframeRef = useRef<HTMLIFrameElement>(null);
